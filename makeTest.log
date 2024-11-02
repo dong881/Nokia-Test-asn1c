@@ -1,0 +1,2371 @@
+Nokia asn1c
+ASN.1 Compiler, v0.9.29
+Copyright (c) 2003-2017 Lev Walkin <vlm@lionet.info> and contributors.
+Usage: asn1c [options] file ...
+Options:
+  -E                    Run only the ASN.1 parser and print out the tree
+  -F                    During -E operation, also perform tree fixing
+
+  -P                    Concatenate and print the compiled text
+  -R                    Restrict output (tables only, no support code)
+  -S <dir>              Directory with support (skeleton?) files
+                        (Default is "/usr/local/share/asn1c")
+  -D <dir>              Destination directory for generated files (default current dir)
+  -X                    Generate and print the XML DTD
+
+  -Werror               Treat warnings as errors; abort if any warning
+  -Wdebug-lexer         Enable verbose debugging output from lexer
+  -Wdebug-parser        Enable verbose debugging output from parser
+  -Wdebug-fixer         --//-- semantics processor
+  -Wdebug-compiler      --//-- compiler
+
+  -fbless-SIZE          Allow SIZE() constraint for INTEGER etc (non-std.)
+  -fcompound-names      Disambiguate C's struct NAME's inside top-level types
+  -findirect-choice     Compile members of CHOICE as indirect pointers
+  -fincludes-quoted     Generate #includes in "double" instead of <angle> quotes
+  -fknown-extern-type=<name>    Pretend the specified type is known
+  -fline-refs           Include ASN.1 module's line numbers in comments
+  -fno-constraints      Do not generate the constraint checking code
+  -fno-include-deps     Do not generate the courtesy #includes for dependencies
+  -funnamed-unions      Enable unnamed unions in structures
+  -fwide-types          Use INTEGER_t instead of "long" by default, etc.
+
+  -no-gen-OER           Do not generate the OER (X.696) support code
+  -no-gen-PER           Do not generate the PER (X.691) support code
+  -no-gen-example       Do not generate the ASN.1 format converter example
+  -gen-autotools        Generate example top-level configure.ac and Makefile.am
+  -pdu={all|auto|Type}  Generate PDU table (discover PDUs automatically)
+
+  -print-class-matrix   Print out the collected object class matrix (debug)
+  -print-constraints    Explain subtype constraints (debug)
+  -print-lines          Generate "-- #line" comments in -E output
+Mouse asn1c
+ASN.1 Compiler, v0.9.29
+Copyright (c) 2003-2017 Lev Walkin <vlm@lionet.info> and contributors.
+Usage: asn1c [options] file ...
+Options:
+  -E                    Run only the ASN.1 parser and print out the tree
+  -F                    During -E operation, also perform tree fixing
+
+  -P                    Concatenate and print the compiled text
+  -R                    Restrict output (tables only, no support code)
+  -S <dir>              Directory with support (skeleton?) files
+                        (Default is "/opt/asn1c/share/asn1c")
+  -D <dir>              Destination directory for generated files (default current dir)
+  -X                    Generate and print the XML DTD
+
+  -Werror               Treat warnings as errors; abort if any warning
+  -Wdebug-lexer         Enable verbose debugging output from lexer
+  -Wdebug-parser        Enable verbose debugging output from parser
+  -Wdebug-fixer         --//-- semantics processor
+  -Wdebug-compiler      --//-- compiler
+
+  -fbless-SIZE          Allow SIZE() constraint for INTEGER etc (non-std.)
+  -fcompound-names      Disambiguate C's struct NAME's inside top-level types
+  -findirect-choice     Compile members of CHOICE as indirect pointers
+  -fincludes-quoted     Generate #includes in "double" instead of <angle> quotes
+  -fknown-extern-type=<name>    Pretend the specified type is known
+  -fline-refs           Include ASN.1 module's line numbers in comments
+  -fno-constraints      Do not generate the constraint checking code
+  -fno-include-deps     Do not generate the courtesy #includes for dependencies
+  -funnamed-unions      Enable unnamed unions in structures
+  -fwide-types          Use INTEGER_t instead of "long" by default, etc.
+  -fprefix=<prefix>     Add the specified prefix to generated types
+
+  -no-gen-BER           Do not generate the Basic Encoding Rules (BER, X.690) support code
+  -no-gen-XER           Do not generate the XML Encoding Rules (XER, X.693) support code
+  -no-gen-JER           Do not generate the JSON Encoding Rules (JER, X.697) support code
+  -no-gen-OER           Do not generate the Octet Encoding Rules (OER, X.696) support code
+  -no-gen-UPER          Do not generate the Unaligned Packed Encoding Rules (PER, X.691) support code
+  -no-gen-APER          Do not generate the Aligned Packed Encoding Rules (PER, X.691) support code
+  -no-gen-print         Do not generate the print code
+  -no-gen-random-fill   Do not generate the random fill code
+  -no-gen-example       Do not generate the ASN.1 format converter example
+  -gen-autotools        Generate example top-level configure.ac and Makefile.am
+  -pdu={all|auto|Type}  Generate PDU table (discover PDUs automatically)
+
+  -print-class-matrix   Print out the collected object class matrix (debug)
+  -print-constraints    Explain subtype constraints (debug)
+  -print-lines          Generate "-- #line" comments in -E output
+Compiled BCCH-BCH-Message.c
+Compiled BCCH-BCH-Message.h
+Compiled BCCH-BCH-MessageType.c
+Compiled BCCH-BCH-MessageType.h
+Compiled BCCH-DL-SCH-Message.c
+Compiled BCCH-DL-SCH-Message.h
+Compiled BCCH-DL-SCH-MessageType.c
+Compiled BCCH-DL-SCH-MessageType.h
+Compiled DL-CCCH-Message.c
+Compiled DL-CCCH-Message.h
+Compiled DL-CCCH-MessageType.c
+Compiled DL-CCCH-MessageType.h
+Compiled DL-DCCH-Message.c
+Compiled DL-DCCH-Message.h
+Compiled DL-DCCH-MessageType.c
+Compiled DL-DCCH-MessageType.h
+Compiled PCCH-Message.c
+Compiled PCCH-Message.h
+Compiled PCCH-MessageType.c
+Compiled PCCH-MessageType.h
+Compiled UL-CCCH-Message.c
+Compiled UL-CCCH-Message.h
+Compiled UL-CCCH-MessageType.c
+Compiled UL-CCCH-MessageType.h
+Compiled UL-CCCH1-Message.c
+Compiled UL-CCCH1-Message.h
+Compiled UL-CCCH1-MessageType.c
+Compiled UL-CCCH1-MessageType.h
+Compiled UL-DCCH-Message.c
+Compiled UL-DCCH-Message.h
+Compiled UL-DCCH-MessageType.c
+Compiled UL-DCCH-MessageType.h
+Compiled CounterCheck.c
+Compiled CounterCheck.h
+Compiled CounterCheck-IEs.c
+Compiled CounterCheck-IEs.h
+Compiled DRB-CountMSB-InfoList.c
+Compiled DRB-CountMSB-InfoList.h
+Compiled DRB-CountMSB-Info.c
+Compiled DRB-CountMSB-Info.h
+Compiled CounterCheckResponse.c
+Compiled CounterCheckResponse.h
+Compiled CounterCheckResponse-IEs.c
+Compiled CounterCheckResponse-IEs.h
+Compiled DRB-CountInfoList.c
+Compiled DRB-CountInfoList.h
+Compiled DRB-CountInfo.c
+Compiled DRB-CountInfo.h
+Compiled DLInformationTransfer.c
+Compiled DLInformationTransfer.h
+Compiled DLInformationTransfer-IEs.c
+Compiled DLInformationTransfer-IEs.h
+Compiled FailureInformation.c
+Compiled FailureInformation.h
+Compiled FailureInformation-IEs.c
+Compiled FailureInformation-IEs.h
+Compiled FailureInfoRLC-Bearer.c
+Compiled FailureInfoRLC-Bearer.h
+Compiled LocationMeasurementIndication.c
+Compiled LocationMeasurementIndication.h
+Compiled LocationMeasurementIndication-IEs.c
+Compiled LocationMeasurementIndication-IEs.h
+Compiled MIB.c
+Compiled MIB.h
+Compiled MeasurementReport.c
+Compiled MeasurementReport.h
+Compiled MeasurementReport-IEs.c
+Compiled MeasurementReport-IEs.h
+Compiled MobilityFromNRCommand.c
+Compiled MobilityFromNRCommand.h
+Compiled MobilityFromNRCommand-IEs.c
+Compiled MobilityFromNRCommand-IEs.h
+Compiled PagingRrc.c
+Compiled PagingRrc.h
+Compiled PagingRecordList.c
+Compiled PagingRecordList.h
+Compiled PagingRecord.c
+Compiled PagingRecord.h
+Compiled PagingUE-Identity.c
+Compiled PagingUE-Identity.h
+Compiled RRCReestablishment.c
+Compiled RRCReestablishment.h
+Compiled RRCReestablishment-IEs.c
+Compiled RRCReestablishment-IEs.h
+Compiled RRCReestablishmentComplete.c
+Compiled RRCReestablishmentComplete.h
+Compiled RRCReestablishmentComplete-IEs.c
+Compiled RRCReestablishmentComplete-IEs.h
+Compiled RRCReestablishmentRequest.c
+Compiled RRCReestablishmentRequest.h
+Compiled RRCReestablishmentRequest-IEs.c
+Compiled RRCReestablishmentRequest-IEs.h
+Compiled ReestabUE-Identity.c
+Compiled ReestabUE-Identity.h
+Compiled ReestablishmentCause.c
+Compiled ReestablishmentCause.h
+Compiled RRCReconfiguration.c
+Compiled RRCReconfiguration.h
+Compiled RRCReconfiguration-IEs.c
+Compiled RRCReconfiguration-IEs.h
+Compiled RRCReconfiguration-v1530-IEs.c
+Compiled RRCReconfiguration-v1530-IEs.h
+Compiled MasterKeyUpdate.c
+Compiled MasterKeyUpdate.h
+Compiled RRCReconfigurationComplete.c
+Compiled RRCReconfigurationComplete.h
+Compiled RRCReconfigurationComplete-IEs.c
+Compiled RRCReconfigurationComplete-IEs.h
+Compiled RRCReconfigurationComplete-v1530-IEs.c
+Compiled RRCReconfigurationComplete-v1530-IEs.h
+Compiled RRCReject.c
+Compiled RRCReject.h
+Compiled RRCReject-IEs.c
+Compiled RRCReject-IEs.h
+Compiled RRCRelease.c
+Compiled RRCRelease.h
+Compiled RRCRelease-IEs.c
+Compiled RRCRelease-IEs.h
+Compiled RRCRelease-v1540-IEs.c
+Compiled RRCRelease-v1540-IEs.h
+Compiled RedirectedCarrierInfo.c
+Compiled RedirectedCarrierInfo.h
+Compiled RedirectedCarrierInfo-EUTRA.c
+Compiled RedirectedCarrierInfo-EUTRA.h
+Compiled CarrierInfoNR.c
+Compiled CarrierInfoNR.h
+Compiled SuspendConfig.c
+Compiled SuspendConfig.h
+Compiled PeriodicRNAU-TimerValue.c
+Compiled PeriodicRNAU-TimerValue.h
+Compiled CellReselectionPriorities.c
+Compiled CellReselectionPriorities.h
+Compiled PagingCycle.c
+Compiled PagingCycle.h
+Compiled FreqPriorityListEUTRA.c
+Compiled FreqPriorityListEUTRA.h
+Compiled FreqPriorityListNR.c
+Compiled FreqPriorityListNR.h
+Compiled FreqPriorityEUTRA.c
+Compiled FreqPriorityEUTRA.h
+Compiled FreqPriorityNR.c
+Compiled FreqPriorityNR.h
+Compiled RAN-NotificationAreaInfo.c
+Compiled RAN-NotificationAreaInfo.h
+Compiled PLMN-RAN-AreaCellList.c
+Compiled PLMN-RAN-AreaCellList.h
+Compiled PLMN-RAN-AreaCell.c
+Compiled PLMN-RAN-AreaCell.h
+Compiled PLMN-RAN-AreaConfigList.c
+Compiled PLMN-RAN-AreaConfigList.h
+Compiled PLMN-RAN-AreaConfig.c
+Compiled PLMN-RAN-AreaConfig.h
+Compiled RAN-AreaConfig.c
+Compiled RAN-AreaConfig.h
+Compiled RRCResume.c
+Compiled RRCResume.h
+Compiled RRCResume-IEs.c
+Compiled RRCResume-IEs.h
+Compiled RRCResumeComplete.c
+Compiled RRCResumeComplete.h
+Compiled RRCResumeComplete-IEs.c
+Compiled RRCResumeComplete-IEs.h
+Compiled RRCResumeRequest.c
+Compiled RRCResumeRequest.h
+Compiled RRCResumeRequest-IEs.c
+Compiled RRCResumeRequest-IEs.h
+Compiled RRCResumeRequest1.c
+Compiled RRCResumeRequest1.h
+Compiled RRCResumeRequest1-IEs.c
+Compiled RRCResumeRequest1-IEs.h
+Compiled RRCSetup.c
+Compiled RRCSetup.h
+Compiled RRCSetup-IEs.c
+Compiled RRCSetup-IEs.h
+Compiled RRCSetupComplete.c
+Compiled RRCSetupComplete.h
+Compiled RRCSetupComplete-IEs.c
+Compiled RRCSetupComplete-IEs.h
+Compiled RegisteredAMF.c
+Compiled RegisteredAMF.h
+Compiled RRCSetupRequest.c
+Compiled RRCSetupRequest.h
+Compiled RRCSetupRequest-IEs.c
+Compiled RRCSetupRequest-IEs.h
+Compiled InitialUE-Identity.c
+Compiled InitialUE-Identity.h
+Compiled EstablishmentCause.c
+Compiled EstablishmentCause.h
+Compiled RRCSystemInfoRequest.c
+Compiled RRCSystemInfoRequest.h
+Compiled RRCSystemInfoRequest-r15-IEs.c
+Compiled RRCSystemInfoRequest-r15-IEs.h
+Compiled SecurityModeCommand.c
+Compiled SecurityModeCommand.h
+Compiled SecurityModeCommand-IEs.c
+Compiled SecurityModeCommand-IEs.h
+Compiled SecurityConfigSMC.c
+Compiled SecurityConfigSMC.h
+Compiled SecurityModeComplete.c
+Compiled SecurityModeComplete.h
+Compiled SecurityModeComplete-IEs.c
+Compiled SecurityModeComplete-IEs.h
+Compiled SecurityModeFailure.c
+Compiled SecurityModeFailure.h
+Compiled SecurityModeFailure-IEs.c
+Compiled SecurityModeFailure-IEs.h
+Compiled SIB1.c
+Compiled SIB1.h
+Compiled UAC-AccessCategory1-SelectionAssistanceInfo.c
+Compiled UAC-AccessCategory1-SelectionAssistanceInfo.h
+Compiled SystemInformation.c
+Compiled SystemInformation.h
+Compiled SystemInformation-IEs.c
+Compiled SystemInformation-IEs.h
+Compiled UEAssistanceInformationRrc.c
+Compiled UEAssistanceInformationRrc.h
+Compiled UEAssistanceInformation-IEs.c
+Compiled UEAssistanceInformation-IEs.h
+Compiled DelayBudgetReport.c
+Compiled DelayBudgetReport.h
+Compiled UEAssistanceInformation-v1540-IEs.c
+Compiled UEAssistanceInformation-v1540-IEs.h
+Compiled OverheatingAssistance.c
+Compiled OverheatingAssistance.h
+Compiled ReducedAggregatedBandwidth.c
+Compiled ReducedAggregatedBandwidth.h
+Compiled UECapabilityEnquiry.c
+Compiled UECapabilityEnquiry.h
+Compiled UECapabilityEnquiry-IEs.c
+Compiled UECapabilityEnquiry-IEs.h
+Compiled UECapabilityInformation.c
+Compiled UECapabilityInformation.h
+Compiled UECapabilityInformation-IEs.c
+Compiled UECapabilityInformation-IEs.h
+Compiled ULInformationTransfer.c
+Compiled ULInformationTransfer.h
+Compiled ULInformationTransfer-IEs.c
+Compiled ULInformationTransfer-IEs.h
+Compiled SIB2.c
+Compiled SIB2.h
+Compiled RangeToBestCell.c
+Compiled RangeToBestCell.h
+Compiled SIB3.c
+Compiled SIB3.h
+Compiled IntraFreqNeighCellList.c
+Compiled IntraFreqNeighCellList.h
+Compiled IntraFreqNeighCellInfo.c
+Compiled IntraFreqNeighCellInfo.h
+Compiled IntraFreqBlackCellList.c
+Compiled IntraFreqBlackCellList.h
+Compiled SIB4.c
+Compiled SIB4.h
+Compiled InterFreqCarrierFreqList.c
+Compiled InterFreqCarrierFreqList.h
+Compiled InterFreqCarrierFreqInfo.c
+Compiled InterFreqCarrierFreqInfo.h
+Compiled InterFreqNeighCellList.c
+Compiled InterFreqNeighCellList.h
+Compiled InterFreqNeighCellInfo.c
+Compiled InterFreqNeighCellInfo.h
+Compiled InterFreqBlackCellList.c
+Compiled InterFreqBlackCellList.h
+Compiled SIB5.c
+Compiled SIB5.h
+Compiled CarrierFreqListEUTRA.c
+Compiled CarrierFreqListEUTRA.h
+Compiled CarrierFreqEUTRA.c
+Compiled CarrierFreqEUTRA.h
+Compiled EUTRA-FreqBlackCellList.c
+Compiled EUTRA-FreqBlackCellList.h
+Compiled EUTRA-FreqNeighCellList.c
+Compiled EUTRA-FreqNeighCellList.h
+Compiled EUTRA-FreqNeighCellInfo.c
+Compiled EUTRA-FreqNeighCellInfo.h
+Compiled SIB6.c
+Compiled SIB6.h
+Compiled SIB7.c
+Compiled SIB7.h
+Compiled SIB8.c
+Compiled SIB8.h
+Compiled SIB9.c
+Compiled SIB9.h
+Compiled AdditionalSpectrumEmission.c
+Compiled AdditionalSpectrumEmission.h
+Compiled Alpha.c
+Compiled Alpha.h
+Compiled AMF-Identifier.c
+Compiled AMF-Identifier.h
+Compiled ARFCN-ValueEUTRA.c
+Compiled ARFCN-ValueEUTRA.h
+Compiled ARFCN-ValueNR.c
+Compiled ARFCN-ValueNR.h
+Compiled BeamFailureRecoveryConfig.c
+Compiled BeamFailureRecoveryConfig.h
+Compiled PRACH-ResourceDedicatedBFR.c
+Compiled PRACH-ResourceDedicatedBFR.h
+Compiled BFR-SSB-Resource.c
+Compiled BFR-SSB-Resource.h
+Compiled BFR-CSIRS-Resource.c
+Compiled BFR-CSIRS-Resource.h
+Compiled BSR-Config.c
+Compiled BSR-Config.h
+Compiled BWP.c
+Compiled BWP.h
+Compiled BWP-Downlink.c
+Compiled BWP-Downlink.h
+Compiled BWP-DownlinkCommon.c
+Compiled BWP-DownlinkCommon.h
+Compiled BWP-DownlinkDedicated.c
+Compiled BWP-DownlinkDedicated.h
+Compiled BWP-Id.c
+Compiled BWP-Id.h
+Compiled BWP-Uplink.c
+Compiled BWP-Uplink.h
+Compiled BWP-UplinkCommon.c
+Compiled BWP-UplinkCommon.h
+Compiled BWP-UplinkDedicated.c
+Compiled BWP-UplinkDedicated.h
+Compiled CellAccessRelatedInfo.c
+Compiled CellAccessRelatedInfo.h
+Compiled CellAccessRelatedInfo-EUTRA-5GC.c
+Compiled CellAccessRelatedInfo-EUTRA-5GC.h
+Compiled PLMN-IdentityList-EUTRA-5GC.c
+Compiled PLMN-IdentityList-EUTRA-5GC.h
+Compiled PLMN-Identity-EUTRA-5GC.c
+Compiled PLMN-Identity-EUTRA-5GC.h
+Compiled CellIdentity-EUTRA-5GC.c
+Compiled CellIdentity-EUTRA-5GC.h
+Compiled CellAccessRelatedInfo-EUTRA-EPC.c
+Compiled CellAccessRelatedInfo-EUTRA-EPC.h
+Compiled PLMN-IdentityList-EUTRA-EPC.c
+Compiled PLMN-IdentityList-EUTRA-EPC.h
+Compiled CellGroupConfigRrc.c
+Compiled CellGroupConfigRrc.h
+Compiled SpCellConfig.c
+Compiled SpCellConfig.h
+Compiled ReconfigurationWithSync.c
+Compiled ReconfigurationWithSync.h
+Compiled SCellConfig.c
+Compiled SCellConfig.h
+Compiled CellGroupId.c
+Compiled CellGroupId.h
+Compiled CellIdentity.c
+Compiled CellIdentity.h
+Compiled CellReselectionPriority.c
+Compiled CellReselectionPriority.h
+Compiled CellReselectionSubPriority.c
+Compiled CellReselectionSubPriority.h
+Compiled CGI-Info.c
+Compiled CGI-Info.h
+Compiled CodebookConfig.c
+Compiled CodebookConfig.h
+Compiled ConfiguredGrantConfig.c
+Compiled ConfiguredGrantConfig.h
+Compiled CG-UCI-OnPUSCH.c
+Compiled CG-UCI-OnPUSCH.h
+Compiled ConnEstFailureControl.c
+Compiled ConnEstFailureControl.h
+Compiled ControlResourceSet.c
+Compiled ControlResourceSet.h
+Compiled ControlResourceSetId.c
+Compiled ControlResourceSetId.h
+Compiled ControlResourceSetZero.c
+Compiled ControlResourceSetZero.h
+Compiled CrossCarrierSchedulingConfig.c
+Compiled CrossCarrierSchedulingConfig.h
+Compiled CSI-AperiodicTriggerStateList.c
+Compiled CSI-AperiodicTriggerStateList.h
+Compiled CSI-AperiodicTriggerState.c
+Compiled CSI-AperiodicTriggerState.h
+Compiled CSI-AssociatedReportConfigInfo.c
+Compiled CSI-AssociatedReportConfigInfo.h
+Compiled CSI-FrequencyOccupation.c
+Compiled CSI-FrequencyOccupation.h
+Compiled CSI-IM-Resource.c
+Compiled CSI-IM-Resource.h
+Compiled CSI-IM-ResourceId.c
+Compiled CSI-IM-ResourceId.h
+Compiled CSI-IM-ResourceSet.c
+Compiled CSI-IM-ResourceSet.h
+Compiled CSI-IM-ResourceSetId.c
+Compiled CSI-IM-ResourceSetId.h
+Compiled CSI-MeasConfig.c
+Compiled CSI-MeasConfig.h
+Compiled CSI-ReportConfig.c
+Compiled CSI-ReportConfig.h
+Compiled CSI-ReportPeriodicityAndOffset.c
+Compiled CSI-ReportPeriodicityAndOffset.h
+Compiled PUCCH-CSI-Resource.c
+Compiled PUCCH-CSI-Resource.h
+Compiled PortIndexFor8Ranks.c
+Compiled PortIndexFor8Ranks.h
+Compiled PortIndex8.c
+Compiled PortIndex8.h
+Compiled PortIndex4.c
+Compiled PortIndex4.h
+Compiled PortIndex2.c
+Compiled PortIndex2.h
+Compiled CSI-ReportConfigId.c
+Compiled CSI-ReportConfigId.h
+Compiled CSI-ResourceConfig.c
+Compiled CSI-ResourceConfig.h
+Compiled CSI-ResourceConfigId.c
+Compiled CSI-ResourceConfigId.h
+Compiled CSI-ResourcePeriodicityAndOffset.c
+Compiled CSI-ResourcePeriodicityAndOffset.h
+Compiled CSI-RS-ResourceConfigMobility.c
+Compiled CSI-RS-ResourceConfigMobility.h
+Compiled CSI-RS-CellMobility.c
+Compiled CSI-RS-CellMobility.h
+Compiled CSI-RS-Resource-Mobility.c
+Compiled CSI-RS-Resource-Mobility.h
+Compiled CSI-RS-Index.c
+Compiled CSI-RS-Index.h
+Compiled CSI-RS-ResourceMapping.c
+Compiled CSI-RS-ResourceMapping.h
+Compiled CSI-SemiPersistentOnPUSCH-TriggerStateList.c
+Compiled CSI-SemiPersistentOnPUSCH-TriggerStateList.h
+Compiled CSI-SemiPersistentOnPUSCH-TriggerState.c
+Compiled CSI-SemiPersistentOnPUSCH-TriggerState.h
+Compiled CSI-SSB-ResourceSet.c
+Compiled CSI-SSB-ResourceSet.h
+Compiled CSI-SSB-ResourceSetId.c
+Compiled CSI-SSB-ResourceSetId.h
+Compiled DedicatedNAS-Message.c
+Compiled DedicatedNAS-Message.h
+Compiled DMRS-DownlinkConfig.c
+Compiled DMRS-DownlinkConfig.h
+Compiled DMRS-UplinkConfig.c
+Compiled DMRS-UplinkConfig.h
+Compiled DownlinkConfigCommon.c
+Compiled DownlinkConfigCommon.h
+Compiled DownlinkConfigCommonSIB.c
+Compiled DownlinkConfigCommonSIB.h
+Compiled BCCH-Config.c
+Compiled BCCH-Config.h
+Compiled PCCH-Config.c
+Compiled PCCH-Config.h
+Compiled DownlinkPreemption.c
+Compiled DownlinkPreemption.h
+Compiled INT-ConfigurationPerServingCell.c
+Compiled INT-ConfigurationPerServingCell.h
+Compiled DRB-Identity.c
+Compiled DRB-Identity.h
+Compiled DRX-ConfigRrc.c
+Compiled DRX-ConfigRrc.h
+Compiled FilterCoefficient.c
+Compiled FilterCoefficient.h
+Compiled FreqBandIndicatorNR.c
+Compiled FreqBandIndicatorNR.h
+Compiled FrequencyInfoDL.c
+Compiled FrequencyInfoDL.h
+Compiled FrequencyInfoDL-SIB.c
+Compiled FrequencyInfoDL-SIB.h
+Compiled FrequencyInfoUL.c
+Compiled FrequencyInfoUL.h
+Compiled FrequencyInfoUL-SIB.c
+Compiled FrequencyInfoUL-SIB.h
+Compiled Hysteresis.c
+Compiled Hysteresis.h
+Compiled I-RNTI-Value.c
+Compiled I-RNTI-Value.h
+Compiled LocationMeasurementInfo.c
+Compiled LocationMeasurementInfo.h
+Compiled EUTRA-RSTD-InfoList.c
+Compiled EUTRA-RSTD-InfoList.h
+Compiled EUTRA-RSTD-Info.c
+Compiled EUTRA-RSTD-Info.h
+Compiled LogicalChannelConfig.c
+Compiled LogicalChannelConfig.h
+Compiled LogicalChannelIdentity.c
+Compiled LogicalChannelIdentity.h
+Compiled MAC-CellGroupConfig.c
+Compiled MAC-CellGroupConfig.h
+Compiled DataInactivityTimer.c
+Compiled DataInactivityTimer.h
+Compiled MeasConfigRrc.c
+Compiled MeasConfigRrc.h
+Compiled MeasObjectToRemoveList.c
+Compiled MeasObjectToRemoveList.h
+Compiled MeasIdToRemoveList.c
+Compiled MeasIdToRemoveList.h
+Compiled ReportConfigToRemoveList.c
+Compiled ReportConfigToRemoveList.h
+Compiled MeasGapConfigRrc.c
+Compiled MeasGapConfigRrc.h
+Compiled GapConfig.c
+Compiled GapConfig.h
+Compiled MeasGapSharingConfig.c
+Compiled MeasGapSharingConfig.h
+Compiled MeasGapSharingScheme.c
+Compiled MeasGapSharingScheme.h
+Compiled MeasId.c
+Compiled MeasId.h
+Compiled MeasIdToAddModList.c
+Compiled MeasIdToAddModList.h
+Compiled MeasIdToAddMod.c
+Compiled MeasIdToAddMod.h
+Compiled MeasObjectEUTRA.c
+Compiled MeasObjectEUTRA.h
+Compiled EUTRA-CellIndexList.c
+Compiled EUTRA-CellIndexList.h
+Compiled EUTRA-CellIndex.c
+Compiled EUTRA-CellIndex.h
+Compiled EUTRA-Cell.c
+Compiled EUTRA-Cell.h
+Compiled EUTRA-BlackCell.c
+Compiled EUTRA-BlackCell.h
+Compiled MeasObjectId.c
+Compiled MeasObjectId.h
+Compiled MeasObjectNR.c
+Compiled MeasObjectNR.h
+Compiled ReferenceSignalConfig.c
+Compiled ReferenceSignalConfig.h
+Compiled SSB-ConfigMobility.c
+Compiled SSB-ConfigMobility.h
+Compiled Q-OffsetRangeList.c
+Compiled Q-OffsetRangeList.h
+Compiled ThresholdNR.c
+Compiled ThresholdNR.h
+Compiled CellsToAddModList.c
+Compiled CellsToAddModList.h
+Compiled CellsToAddMod.c
+Compiled CellsToAddMod.h
+Compiled MeasObjectToAddModList.c
+Compiled MeasObjectToAddModList.h
+Compiled MeasObjectToAddMod.c
+Compiled MeasObjectToAddMod.h
+Compiled MeasResultCellListSFTD.c
+Compiled MeasResultCellListSFTD.h
+Compiled MeasResultCellSFTD.c
+Compiled MeasResultCellSFTD.h
+Compiled MeasResults.c
+Compiled MeasResults.h
+Compiled MeasResultServMOList.c
+Compiled MeasResultServMOList.h
+Compiled MeasResultServMO.c
+Compiled MeasResultServMO.h
+Compiled MeasResultListNR.c
+Compiled MeasResultListNR.h
+Compiled MeasResultNR.c
+Compiled MeasResultNR.h
+Compiled MeasResultListEUTRA.c
+Compiled MeasResultListEUTRA.h
+Compiled MeasResultEUTRA.c
+Compiled MeasResultEUTRA.h
+Compiled MultiBandInfoListEUTRA.c
+Compiled MultiBandInfoListEUTRA.h
+Compiled MeasQuantityResults.c
+Compiled MeasQuantityResults.h
+Compiled MeasQuantityResultsEUTRA.c
+Compiled MeasQuantityResultsEUTRA.h
+Compiled ResultsPerSSB-IndexList.c
+Compiled ResultsPerSSB-IndexList.h
+Compiled ResultsPerSSB-Index.c
+Compiled ResultsPerSSB-Index.h
+Compiled ResultsPerCSI-RS-IndexList.c
+Compiled ResultsPerCSI-RS-IndexList.h
+Compiled ResultsPerCSI-RS-Index.c
+Compiled ResultsPerCSI-RS-Index.h
+Compiled MeasResultSCG-Failure.c
+Compiled MeasResultSCG-Failure.h
+Compiled MeasResultList2NR.c
+Compiled MeasResultList2NR.h
+Compiled MeasResult2NR.c
+Compiled MeasResult2NR.h
+Compiled MobilityStateParameters.c
+Compiled MobilityStateParameters.h
+Compiled MultiFrequencyBandListNR.c
+Compiled MultiFrequencyBandListNR.h
+Compiled MultiFrequencyBandListNR-SIB.c
+Compiled MultiFrequencyBandListNR-SIB.h
+Compiled NR-MultiBandInfo.c
+Compiled NR-MultiBandInfo.h
+Compiled NextHopChainingCount.c
+Compiled NextHopChainingCount.h
+Compiled NG-5G-S-TMSI.c
+Compiled NG-5G-S-TMSI.h
+Compiled NR-NS-PmaxList.c
+Compiled NR-NS-PmaxList.h
+Compiled NR-NS-PmaxValue.c
+Compiled NR-NS-PmaxValue.h
+Compiled NZP-CSI-RS-Resource.c
+Compiled NZP-CSI-RS-Resource.h
+Compiled NZP-CSI-RS-ResourceId.c
+Compiled NZP-CSI-RS-ResourceId.h
+Compiled NZP-CSI-RS-ResourceSet.c
+Compiled NZP-CSI-RS-ResourceSet.h
+Compiled NZP-CSI-RS-ResourceSetId.c
+Compiled NZP-CSI-RS-ResourceSetId.h
+Compiled P-Max.c
+Compiled P-Max.h
+Compiled PCI-List.c
+Compiled PCI-List.h
+Compiled PCI-Range.c
+Compiled PCI-Range.h
+Compiled PCI-RangeElement.c
+Compiled PCI-RangeElement.h
+Compiled PCI-RangeIndex.c
+Compiled PCI-RangeIndex.h
+Compiled PCI-RangeIndexList.c
+Compiled PCI-RangeIndexList.h
+Compiled PDCCH-Config.c
+Compiled PDCCH-Config.h
+Compiled PDCCH-ConfigCommon.c
+Compiled PDCCH-ConfigCommon.h
+Compiled PDCCH-ConfigSIB1.c
+Compiled PDCCH-ConfigSIB1.h
+Compiled PDCCH-ServingCellConfig.c
+Compiled PDCCH-ServingCellConfig.h
+Compiled PDCP-Config.c
+Compiled PDCP-Config.h
+Compiled UL-DataSplitThreshold.c
+Compiled UL-DataSplitThreshold.h
+Compiled PDSCH-Config.c
+Compiled PDSCH-Config.h
+Compiled RateMatchPatternGroup.c
+Compiled RateMatchPatternGroup.h
+Compiled PDSCH-ConfigCommon.c
+Compiled PDSCH-ConfigCommon.h
+Compiled PDSCH-ServingCellConfig.c
+Compiled PDSCH-ServingCellConfig.h
+Compiled PDSCH-CodeBlockGroupTransmission.c
+Compiled PDSCH-CodeBlockGroupTransmission.h
+Compiled PDSCH-TimeDomainResourceAllocationList.c
+Compiled PDSCH-TimeDomainResourceAllocationList.h
+Compiled PDSCH-TimeDomainResourceAllocation.c
+Compiled PDSCH-TimeDomainResourceAllocation.h
+Compiled PHR-Config.c
+Compiled PHR-Config.h
+Compiled PhysCellId.c
+Compiled PhysCellId.h
+Compiled PhysicalCellGroupConfig.c
+Compiled PhysicalCellGroupConfig.h
+Compiled PLMN-IdentitY.c
+Compiled PLMN-IdentitY.h
+Compiled MCC.c
+Compiled MCC.h
+Compiled MNC.c
+Compiled MNC.h
+Compiled MCC-MNC-Digit.c
+Compiled MCC-MNC-Digit.h
+Compiled PLMN-IdentityInfoList.c
+Compiled PLMN-IdentityInfoList.h
+Compiled PLMN-IdentityInfo.c
+Compiled PLMN-IdentityInfo.h
+Compiled PRB-Id.c
+Compiled PRB-Id.h
+Compiled PTRS-DownlinkConfig.c
+Compiled PTRS-DownlinkConfig.h
+Compiled PTRS-UplinkConfig.c
+Compiled PTRS-UplinkConfig.h
+Compiled PUCCH-Config.c
+Compiled PUCCH-Config.h
+Compiled PUCCH-FormatConfig.c
+Compiled PUCCH-FormatConfig.h
+Compiled PUCCH-MaxCodeRate.c
+Compiled PUCCH-MaxCodeRate.h
+Compiled PUCCH-ResourceSet.c
+Compiled PUCCH-ResourceSet.h
+Compiled PUCCH-ResourceSetId.c
+Compiled PUCCH-ResourceSetId.h
+Compiled PUCCH-Resource.c
+Compiled PUCCH-Resource.h
+Compiled PUCCH-ResourceId.c
+Compiled PUCCH-ResourceId.h
+Compiled PUCCH-format0.c
+Compiled PUCCH-format0.h
+Compiled PUCCH-format1.c
+Compiled PUCCH-format1.h
+Compiled PUCCH-format2.c
+Compiled PUCCH-format2.h
+Compiled PUCCH-format3.c
+Compiled PUCCH-format3.h
+Compiled PUCCH-format4.c
+Compiled PUCCH-format4.h
+Compiled PUCCH-ConfigCommon.c
+Compiled PUCCH-ConfigCommon.h
+Compiled PUCCH-PathlossReferenceRS-Id.c
+Compiled PUCCH-PathlossReferenceRS-Id.h
+Compiled PUCCH-PowerControl.c
+Compiled PUCCH-PowerControl.h
+Compiled P0-PUCCH.c
+Compiled P0-PUCCH.h
+Compiled P0-PUCCH-Id.c
+Compiled P0-PUCCH-Id.h
+Compiled PUCCH-PathlossReferenceRS.c
+Compiled PUCCH-PathlossReferenceRS.h
+Compiled PUCCH-SpatialRelationInfo.c
+Compiled PUCCH-SpatialRelationInfo.h
+Compiled PUCCH-SpatialRelationInfoId.c
+Compiled PUCCH-SpatialRelationInfoId.h
+Compiled PUCCH-TPC-CommandConfig.c
+Compiled PUCCH-TPC-CommandConfig.h
+Compiled PUSCH-Config.c
+Compiled PUSCH-Config.h
+Compiled UCI-OnPUSCH.c
+Compiled UCI-OnPUSCH.h
+Compiled PUSCH-ConfigCommon.c
+Compiled PUSCH-ConfigCommon.h
+Compiled PUSCH-PowerControl.c
+Compiled PUSCH-PowerControl.h
+Compiled P0-PUSCH-AlphaSet.c
+Compiled P0-PUSCH-AlphaSet.h
+Compiled P0-PUSCH-AlphaSetId.c
+Compiled P0-PUSCH-AlphaSetId.h
+Compiled PUSCH-PathlossReferenceRS.c
+Compiled PUSCH-PathlossReferenceRS.h
+Compiled PUSCH-PathlossReferenceRS-Id.c
+Compiled PUSCH-PathlossReferenceRS-Id.h
+Compiled SRI-PUSCH-PowerControl.c
+Compiled SRI-PUSCH-PowerControl.h
+Compiled SRI-PUSCH-PowerControlId.c
+Compiled SRI-PUSCH-PowerControlId.h
+Compiled BetaOffsets.c
+Compiled BetaOffsets.h
+Compiled PUSCH-ServingCellConfig.c
+Compiled PUSCH-ServingCellConfig.h
+Compiled PUSCH-CodeBlockGroupTransmission.c
+Compiled PUSCH-CodeBlockGroupTransmission.h
+Compiled PUSCH-TimeDomainResourceAllocationList.c
+Compiled PUSCH-TimeDomainResourceAllocationList.h
+Compiled PUSCH-TimeDomainResourceAllocation.c
+Compiled PUSCH-TimeDomainResourceAllocation.h
+Compiled PUSCH-TPC-CommandConfig.c
+Compiled PUSCH-TPC-CommandConfig.h
+Compiled Q-OffsetRange.c
+Compiled Q-OffsetRange.h
+Compiled Q-QualMin.c
+Compiled Q-QualMin.h
+Compiled Q-RxLevMin.c
+Compiled Q-RxLevMin.h
+Compiled QuantityConfig.c
+Compiled QuantityConfig.h
+Compiled QuantityConfigNR.c
+Compiled QuantityConfigNR.h
+Compiled QuantityConfigRS.c
+Compiled QuantityConfigRS.h
+Compiled FilterConfig.c
+Compiled FilterConfig.h
+Compiled RACH-ConfigCommon.c
+Compiled RACH-ConfigCommon.h
+Compiled RACH-ConfigDedicated.c
+Compiled RACH-ConfigDedicated.h
+Compiled CFRA.c
+Compiled CFRA.h
+Compiled CFRA-SSB-Resource.c
+Compiled CFRA-SSB-Resource.h
+Compiled CFRA-CSIRS-Resource.c
+Compiled CFRA-CSIRS-Resource.h
+Compiled RACH-ConfigGeneric.c
+Compiled RACH-ConfigGeneric.h
+Compiled RA-Prioritization.c
+Compiled RA-Prioritization.h
+Compiled RadioBearerConfig.c
+Compiled RadioBearerConfig.h
+Compiled SRB-ToAddModList.c
+Compiled SRB-ToAddModList.h
+Compiled SRB-ToAddMod.c
+Compiled SRB-ToAddMod.h
+Compiled DRB-ToAddModList.c
+Compiled DRB-ToAddModList.h
+Compiled DRB-ToAddMod.c
+Compiled DRB-ToAddMod.h
+Compiled DRB-ToReleaseList.c
+Compiled DRB-ToReleaseList.h
+Compiled SecurityConfig.c
+Compiled SecurityConfig.h
+Compiled RadioLinkMonitoringConfig.c
+Compiled RadioLinkMonitoringConfig.h
+Compiled RadioLinkMonitoringRS.c
+Compiled RadioLinkMonitoringRS.h
+Compiled RadioLinkMonitoringRS-Id.c
+Compiled RadioLinkMonitoringRS-Id.h
+Compiled RAN-AreaCode.c
+Compiled RAN-AreaCode.h
+Compiled RateMatchPattern.c
+Compiled RateMatchPattern.h
+Compiled RateMatchPatternId.c
+Compiled RateMatchPatternId.h
+Compiled RateMatchPatternLTE-CRS.c
+Compiled RateMatchPatternLTE-CRS.h
+Compiled RejectWaitTime.c
+Compiled RejectWaitTime.h
+Compiled ReportConfigId.c
+Compiled ReportConfigId.h
+Compiled ReportConfigInterRAT.c
+Compiled ReportConfigInterRAT.h
+Compiled ReportCGI-EUTRA.c
+Compiled ReportCGI-EUTRA.h
+Compiled EventTriggerConfigInterRAT.c
+Compiled EventTriggerConfigInterRAT.h
+Compiled PeriodicalReportConfigInterRAT.c
+Compiled PeriodicalReportConfigInterRAT.h
+Compiled MeasTriggerQuantityEUTRA.c
+Compiled MeasTriggerQuantityEUTRA.h
+Compiled RSRP-RangeEUTRA.c
+Compiled RSRP-RangeEUTRA.h
+Compiled RSRQ-RangeEUTRA.c
+Compiled RSRQ-RangeEUTRA.h
+Compiled SINR-RangeEUTRA.c
+Compiled SINR-RangeEUTRA.h
+Compiled ReportConfigNR.c
+Compiled ReportConfigNR.h
+Compiled ReportCGI.c
+Compiled ReportCGI.h
+Compiled EventTriggerConfig.c
+Compiled EventTriggerConfig.h
+Compiled PeriodicalReportConfig.c
+Compiled PeriodicalReportConfig.h
+Compiled NR-RS-Type.c
+Compiled NR-RS-Type.h
+Compiled MeasTriggerQuantity.c
+Compiled MeasTriggerQuantity.h
+Compiled MeasTriggerQuantityOffset.c
+Compiled MeasTriggerQuantityOffset.h
+Compiled MeasReportQuantity.c
+Compiled MeasReportQuantity.h
+Compiled ReportConfigToAddModList.c
+Compiled ReportConfigToAddModList.h
+Compiled ReportConfigToAddMod.c
+Compiled ReportConfigToAddMod.h
+Compiled ReportInterval.c
+Compiled ReportInterval.h
+Compiled ReselectionThreshold.c
+Compiled ReselectionThreshold.h
+Compiled ReselectionThresholdQ.c
+Compiled ReselectionThresholdQ.h
+Compiled ResumeCause.c
+Compiled ResumeCause.h
+Compiled RLC-BearerConfig.c
+Compiled RLC-BearerConfig.h
+Compiled RLC-Config.c
+Compiled RLC-Config.h
+Compiled UL-AM-RLC.c
+Compiled UL-AM-RLC.h
+Compiled DL-AM-RLC.c
+Compiled DL-AM-RLC.h
+Compiled UL-UM-RLC.c
+Compiled UL-UM-RLC.h
+Compiled DL-UM-RLC.c
+Compiled DL-UM-RLC.h
+Compiled T-PollRetransmit.c
+Compiled T-PollRetransmit.h
+Compiled PollPDU.c
+Compiled PollPDU.h
+Compiled PollByte.c
+Compiled PollByte.h
+Compiled T-Reassembly.c
+Compiled T-Reassembly.h
+Compiled T-StatusProhibit.c
+Compiled T-StatusProhibit.h
+Compiled SN-FieldLengthUM.c
+Compiled SN-FieldLengthUM.h
+Compiled SN-FieldLengthAM.c
+Compiled SN-FieldLengthAM.h
+Compiled RLF-TimersAndConstants.c
+Compiled RLF-TimersAndConstants.h
+Compiled RNTI-Value.c
+Compiled RNTI-Value.h
+Compiled RSRP-Range.c
+Compiled RSRP-Range.h
+Compiled RSRQ-Range.c
+Compiled RSRQ-Range.h
+Compiled SCellIndexRrc.c
+Compiled SCellIndexRrc.h
+Compiled SchedulingRequestConfig.c
+Compiled SchedulingRequestConfig.h
+Compiled SchedulingRequestToAddMod.c
+Compiled SchedulingRequestToAddMod.h
+Compiled SchedulingRequestId.c
+Compiled SchedulingRequestId.h
+Compiled SchedulingRequestResourceConfig.c
+Compiled SchedulingRequestResourceConfig.h
+Compiled SchedulingRequestResourceId.c
+Compiled SchedulingRequestResourceId.h
+Compiled ScramblingId.c
+Compiled ScramblingId.h
+Compiled SCS-SpecificCarrier.c
+Compiled SCS-SpecificCarrier.h
+Compiled SDAP-Config.c
+Compiled SDAP-Config.h
+Compiled QFI.c
+Compiled QFI.h
+Compiled PDU-SessionID.c
+Compiled PDU-SessionID.h
+Compiled SearchSpace.c
+Compiled SearchSpace.h
+Compiled SearchSpaceId.c
+Compiled SearchSpaceId.h
+Compiled SearchSpaceZero.c
+Compiled SearchSpaceZero.h
+Compiled SecurityAlgorithmConfig.c
+Compiled SecurityAlgorithmConfig.h
+Compiled IntegrityProtAlgorithm.c
+Compiled IntegrityProtAlgorithm.h
+Compiled CipheringAlgorithm.c
+Compiled CipheringAlgorithm.h
+Compiled ServCellIndexRrc.c
+Compiled ServCellIndexRrc.h
+Compiled ServingCellConfig.c
+Compiled ServingCellConfig.h
+Compiled UplinkConfig.c
+Compiled UplinkConfig.h
+Compiled ServingCellConfigCommon.c
+Compiled ServingCellConfigCommon.h
+Compiled ServingCellConfigCommonSIB.c
+Compiled ServingCellConfigCommonSIB.h
+Compiled ShortI-RNTI-Value.c
+Compiled ShortI-RNTI-Value.h
+Compiled ShortMAC-I.c
+Compiled ShortMAC-I.h
+Compiled SINR-Range.c
+Compiled SINR-Range.h
+Compiled SI-SchedulingInfo.c
+Compiled SI-SchedulingInfo.h
+Compiled SchedulingInfo.c
+Compiled SchedulingInfo.h
+Compiled SIB-Mapping.c
+Compiled SIB-Mapping.h
+Compiled SIB-TypeInfo.c
+Compiled SIB-TypeInfo.h
+Compiled SI-RequestConfig.c
+Compiled SI-RequestConfig.h
+Compiled SI-RequestResources.c
+Compiled SI-RequestResources.h
+Compiled SlotFormatCombinationsPerCell.c
+Compiled SlotFormatCombinationsPerCell.h
+Compiled SlotFormatCombination.c
+Compiled SlotFormatCombination.h
+Compiled SlotFormatCombinationId.c
+Compiled SlotFormatCombinationId.h
+Compiled SlotFormatIndicator.c
+Compiled SlotFormatIndicator.h
+Compiled S-NSSAI.c
+Compiled S-NSSAI.h
+Compiled SpeedStateScaleFactors.c
+Compiled SpeedStateScaleFactors.h
+Compiled SS-RSSI-Measurement.c
+Compiled SS-RSSI-Measurement.h
+Compiled SPS-Config.c
+Compiled SPS-Config.h
+Compiled SRB-Identity.c
+Compiled SRB-Identity.h
+Compiled SRS-CarrierSwitching.c
+Compiled SRS-CarrierSwitching.h
+Compiled SRS-TPC-PDCCH-Config.c
+Compiled SRS-TPC-PDCCH-Config.h
+Compiled SRS-CC-SetIndex.c
+Compiled SRS-CC-SetIndex.h
+Compiled SRS-Config.c
+Compiled SRS-Config.h
+Compiled SRS-ResourceSet.c
+Compiled SRS-ResourceSet.h
+Compiled SRS-ResourceSetId.c
+Compiled SRS-ResourceSetId.h
+Compiled SRS-Resource.c
+Compiled SRS-Resource.h
+Compiled SRS-SpatialRelationInfo.c
+Compiled SRS-SpatialRelationInfo.h
+Compiled SRS-ResourceId.c
+Compiled SRS-ResourceId.h
+Compiled SRS-PeriodicityAndOffset.c
+Compiled SRS-PeriodicityAndOffset.h
+Compiled SRS-TPC-CommandConfig.c
+Compiled SRS-TPC-CommandConfig.h
+Compiled SSB-Index.c
+Compiled SSB-Index.h
+Compiled SSB-MTC.c
+Compiled SSB-MTC.h
+Compiled SSB-MTC2.c
+Compiled SSB-MTC2.h
+Compiled SSB-ToMeasure.c
+Compiled SSB-ToMeasure.h
+Compiled SubcarrierSpacing.c
+Compiled SubcarrierSpacing.h
+Compiled TAG-Config.c
+Compiled TAG-Config.h
+Compiled TAG.c
+Compiled TAG.h
+Compiled TAG-Id.c
+Compiled TAG-Id.h
+Compiled TimeAlignmentTimer.c
+Compiled TimeAlignmentTimer.h
+Compiled TCI-State.c
+Compiled TCI-State.h
+Compiled QCL-Info.c
+Compiled QCL-Info.h
+Compiled TCI-StateId.c
+Compiled TCI-StateId.h
+Compiled TDD-UL-DL-ConfigCommon.c
+Compiled TDD-UL-DL-ConfigCommon.h
+Compiled TDD-UL-DL-Pattern.c
+Compiled TDD-UL-DL-Pattern.h
+Compiled TDD-UL-DL-ConfigDedicated.c
+Compiled TDD-UL-DL-ConfigDedicated.h
+Compiled TDD-UL-DL-SlotConfig.c
+Compiled TDD-UL-DL-SlotConfig.h
+Compiled TDD-UL-DL-SlotIndex.c
+Compiled TDD-UL-DL-SlotIndex.h
+Compiled TrackingAreaCode.c
+Compiled TrackingAreaCode.h
+Compiled T-Reselection.c
+Compiled T-Reselection.h
+Compiled TimeToTrigger.c
+Compiled TimeToTrigger.h
+Compiled UAC-BarringInfoSetIndex.c
+Compiled UAC-BarringInfoSetIndex.h
+Compiled UAC-BarringInfoSetList.c
+Compiled UAC-BarringInfoSetList.h
+Compiled UAC-BarringInfoSet.c
+Compiled UAC-BarringInfoSet.h
+Compiled UAC-BarringPerCatList.c
+Compiled UAC-BarringPerCatList.h
+Compiled UAC-BarringPerCat.c
+Compiled UAC-BarringPerCat.h
+Compiled UAC-BarringPerPLMN-List.c
+Compiled UAC-BarringPerPLMN-List.h
+Compiled UAC-BarringPerPLMN.c
+Compiled UAC-BarringPerPLMN.h
+Compiled UE-TimersAndConstants.c
+Compiled UE-TimersAndConstants.h
+Compiled UplinkConfigCommon.c
+Compiled UplinkConfigCommon.h
+Compiled UplinkConfigCommonSIB.c
+Compiled UplinkConfigCommonSIB.h
+Compiled UplinkTxDirectCurrentList.c
+Compiled UplinkTxDirectCurrentList.h
+Compiled UplinkTxDirectCurrentCell.c
+Compiled UplinkTxDirectCurrentCell.h
+Compiled UplinkTxDirectCurrentBWP.c
+Compiled UplinkTxDirectCurrentBWP.h
+Compiled ZP-CSI-RS-Resource.c
+Compiled ZP-CSI-RS-Resource.h
+Compiled ZP-CSI-RS-ResourceId.c
+Compiled ZP-CSI-RS-ResourceId.h
+Compiled ZP-CSI-RS-ResourceSet.c
+Compiled ZP-CSI-RS-ResourceSet.h
+Compiled ZP-CSI-RS-ResourceSetId.c
+Compiled ZP-CSI-RS-ResourceSetId.h
+Compiled AccessStratumRelease.c
+Compiled AccessStratumRelease.h
+Compiled BandCombinationList.c
+Compiled BandCombinationList.h
+Compiled BandCombination.c
+Compiled BandCombination.h
+Compiled BandParameters.c
+Compiled BandParameters.h
+Compiled CA-BandwidthClassEUTRA.c
+Compiled CA-BandwidthClassEUTRA.h
+Compiled CA-BandwidthClassNR.c
+Compiled CA-BandwidthClassNR.h
+Compiled CA-ParametersEUTRA.c
+Compiled CA-ParametersEUTRA.h
+Compiled CA-ParametersNR.c
+Compiled CA-ParametersNR.h
+Compiled FeatureSetCombination.c
+Compiled FeatureSetCombination.h
+Compiled FeatureSetsPerBand.c
+Compiled FeatureSetsPerBand.h
+Compiled FeatureSet.c
+Compiled FeatureSet.h
+Compiled FeatureSetCombinationId.c
+Compiled FeatureSetCombinationId.h
+Compiled FeatureSetDownlink.c
+Compiled FeatureSetDownlink.h
+Compiled CSI-RS-IM-ReceptionForFeedback.c
+Compiled CSI-RS-IM-ReceptionForFeedback.h
+Compiled TypeI-SinglePanelCodebook.c
+Compiled TypeI-SinglePanelCodebook.h
+Compiled TypeI-MultiPanelCodebook.c
+Compiled TypeI-MultiPanelCodebook.h
+Compiled TypeII-Codebook.c
+Compiled TypeII-Codebook.h
+Compiled TypeII-CodebookPortSelection.c
+Compiled TypeII-CodebookPortSelection.h
+Compiled FeatureSetDownlinkId.c
+Compiled FeatureSetDownlinkId.h
+Compiled FeatureSetDownlinkPerCC.c
+Compiled FeatureSetDownlinkPerCC.h
+Compiled FeatureSetDownlinkPerCC-Id.c
+Compiled FeatureSetDownlinkPerCC-Id.h
+Compiled FeatureSetEUTRA-DownlinkId.c
+Compiled FeatureSetEUTRA-DownlinkId.h
+Compiled FeatureSetEUTRA-UplinkId.c
+Compiled FeatureSetEUTRA-UplinkId.h
+Compiled FeatureSets.c
+Compiled FeatureSets.h
+Compiled FeatureSetUplink.c
+Compiled FeatureSetUplink.h
+Compiled CSI-ReportFramework.c
+Compiled CSI-ReportFramework.h
+Compiled SRS-Resources.c
+Compiled SRS-Resources.h
+Compiled FeatureSetUplinkId.c
+Compiled FeatureSetUplinkId.h
+Compiled FeatureSetUplinkPerCC.c
+Compiled FeatureSetUplinkPerCC.h
+Compiled FeatureSetUplinkPerCC-Id.c
+Compiled FeatureSetUplinkPerCC-Id.h
+Compiled FreqBandIndicatorEUTRA.c
+Compiled FreqBandIndicatorEUTRA.h
+Compiled FreqBandList.c
+Compiled FreqBandList.h
+Compiled FreqBandInformation.c
+Compiled FreqBandInformation.h
+Compiled FreqBandInformationEUTRA.c
+Compiled FreqBandInformationEUTRA.h
+Compiled FreqBandInformationNR.c
+Compiled FreqBandInformationNR.h
+Compiled AggregatedBandwidth.c
+Compiled AggregatedBandwidth.h
+Compiled FreqSeparationClass.c
+Compiled FreqSeparationClass.h
+Compiled InterRAT-Parameters.c
+Compiled InterRAT-Parameters.h
+Compiled EUTRA-Parameters.c
+Compiled EUTRA-Parameters.h
+Compiled EUTRA-ParametersCommon.c
+Compiled EUTRA-ParametersCommon.h
+Compiled EUTRA-ParametersXDD-Diff.c
+Compiled EUTRA-ParametersXDD-Diff.h
+Compiled MAC-Parameters.c
+Compiled MAC-Parameters.h
+Compiled MAC-ParametersCommon.c
+Compiled MAC-ParametersCommon.h
+Compiled MAC-ParametersXDD-Diff.c
+Compiled MAC-ParametersXDD-Diff.h
+Compiled MeasAndMobParameters.c
+Compiled MeasAndMobParameters.h
+Compiled MeasAndMobParametersCommon.c
+Compiled MeasAndMobParametersCommon.h
+Compiled MeasAndMobParametersXDD-Diff.c
+Compiled MeasAndMobParametersXDD-Diff.h
+Compiled MeasAndMobParametersFRX-Diff.c
+Compiled MeasAndMobParametersFRX-Diff.h
+Compiled MeasAndMobParametersMRDC.c
+Compiled MeasAndMobParametersMRDC.h
+Compiled MeasAndMobParametersMRDC-Common.c
+Compiled MeasAndMobParametersMRDC-Common.h
+Compiled MeasAndMobParametersMRDC-XDD-Diff.c
+Compiled MeasAndMobParametersMRDC-XDD-Diff.h
+Compiled MeasAndMobParametersMRDC-FRX-Diff.c
+Compiled MeasAndMobParametersMRDC-FRX-Diff.h
+Compiled MIMO-LayersDL.c
+Compiled MIMO-LayersDL.h
+Compiled MIMO-LayersUL.c
+Compiled MIMO-LayersUL.h
+Compiled MIMO-ParametersPerBand.c
+Compiled MIMO-ParametersPerBand.h
+Compiled BeamManagementSSB-CSI-RS.c
+Compiled BeamManagementSSB-CSI-RS.h
+Compiled CSI-RS-ForTracking.c
+Compiled CSI-RS-ForTracking.h
+Compiled PTRS-DensityRecommendationDL.c
+Compiled PTRS-DensityRecommendationDL.h
+Compiled PTRS-DensityRecommendationUL.c
+Compiled PTRS-DensityRecommendationUL.h
+Compiled SRS-TxSwitch.c
+Compiled SRS-TxSwitch.h
+Compiled ModulationOrder.c
+Compiled ModulationOrder.h
+Compiled MRDC-Parameters.c
+Compiled MRDC-Parameters.h
+Compiled PDCP-Parameters.c
+Compiled PDCP-Parameters.h
+Compiled PDCP-ParametersMRDC.c
+Compiled PDCP-ParametersMRDC.h
+Compiled Phy-Parameters.c
+Compiled Phy-Parameters.h
+Compiled Phy-ParametersCommon.c
+Compiled Phy-ParametersCommon.h
+Compiled Phy-ParametersXDD-Diff.c
+Compiled Phy-ParametersXDD-Diff.h
+Compiled Phy-ParametersFRX-Diff.c
+Compiled Phy-ParametersFRX-Diff.h
+Compiled Phy-ParametersFR1.c
+Compiled Phy-ParametersFR1.h
+Compiled Phy-ParametersFR2.c
+Compiled Phy-ParametersFR2.h
+Compiled Phy-ParametersMRDC.c
+Compiled Phy-ParametersMRDC.h
+Compiled NAICS-Capability-Entry.c
+Compiled NAICS-Capability-Entry.h
+Compiled RAT-Type.c
+Compiled RAT-Type.h
+Compiled RF-Parameters.c
+Compiled RF-Parameters.h
+Compiled BandNR.c
+Compiled BandNR.h
+Compiled RF-ParametersMRDC.c
+Compiled RF-ParametersMRDC.h
+Compiled RLC-Parameters.c
+Compiled RLC-Parameters.h
+Compiled SupportedBandwidth.c
+Compiled SupportedBandwidth.h
+Compiled UE-CapabilityRAT-ContainerListRRC.c
+Compiled UE-CapabilityRAT-ContainerListRRC.h
+Compiled UE-CapabilityRAT-Container.c
+Compiled UE-CapabilityRAT-Container.h
+Compiled UE-CapabilityRAT-RequestList.c
+Compiled UE-CapabilityRAT-RequestList.h
+Compiled UE-CapabilityRAT-Request.c
+Compiled UE-CapabilityRAT-Request.h
+Compiled UE-CapabilityRequestFilterNR.c
+Compiled UE-CapabilityRequestFilterNR.h
+Compiled UE-MRDC-Capability.c
+Compiled UE-MRDC-Capability.h
+Compiled UE-MRDC-CapabilityAddXDD-Mode.c
+Compiled UE-MRDC-CapabilityAddXDD-Mode.h
+Compiled UE-MRDC-CapabilityAddFRX-Mode.c
+Compiled UE-MRDC-CapabilityAddFRX-Mode.h
+Compiled GeneralParametersMRDC-XDD-Diff.c
+Compiled GeneralParametersMRDC-XDD-Diff.h
+Compiled UE-NR-Capability.c
+Compiled UE-NR-Capability.h
+Compiled UE-NR-CapabilityAddXDD-Mode.c
+Compiled UE-NR-CapabilityAddXDD-Mode.h
+Compiled UE-NR-CapabilityAddFRX-Mode.c
+Compiled UE-NR-CapabilityAddFRX-Mode.h
+Compiled EUTRA-AllowedMeasBandwidth.c
+Compiled EUTRA-AllowedMeasBandwidth.h
+Compiled EUTRA-MBSFN-SubframeConfigList.c
+Compiled EUTRA-MBSFN-SubframeConfigList.h
+Compiled EUTRA-MBSFN-SubframeConfig.c
+Compiled EUTRA-MBSFN-SubframeConfig.h
+Compiled EUTRA-MultiBandInfoList.c
+Compiled EUTRA-MultiBandInfoList.h
+Compiled EUTRA-MultiBandInfo.c
+Compiled EUTRA-MultiBandInfo.h
+Compiled EUTRA-NS-PmaxList.c
+Compiled EUTRA-NS-PmaxList.h
+Compiled EUTRA-NS-PmaxValue.c
+Compiled EUTRA-NS-PmaxValue.h
+Compiled EUTRA-PhysCellId.c
+Compiled EUTRA-PhysCellId.h
+Compiled EUTRA-PhysCellIdRange.c
+Compiled EUTRA-PhysCellIdRange.h
+Compiled EUTRA-PresenceAntennaPort1.c
+Compiled EUTRA-PresenceAntennaPort1.h
+Compiled EUTRA-Q-OffsetRange.c
+Compiled EUTRA-Q-OffsetRange.h
+Compiled OtherConfig.c
+Compiled OtherConfig.h
+Compiled RRC-TransactionIdentifier.c
+Compiled RRC-TransactionIdentifier.h
+Compiled VarPendingRNA-Update.c
+Compiled VarPendingRNA-Update.h
+Compiled VarMeasConfig.c
+Compiled VarMeasConfig.h
+Compiled VarMeasReportList.c
+Compiled VarMeasReportList.h
+Compiled VarMeasReport.c
+Compiled VarMeasReport.h
+Compiled CellsTriggeredList.c
+Compiled CellsTriggeredList.h
+Compiled VarResumeMAC-Input.c
+Compiled VarResumeMAC-Input.h
+Compiled VarShortMAC-Input.c
+Compiled VarShortMAC-Input.h
+Compiled HandoverCommand.c
+Compiled HandoverCommand.h
+Compiled HandoverCommand-IEs.c
+Compiled HandoverCommand-IEs.h
+Compiled HandoverPreparationInformationRrc.c
+Compiled HandoverPreparationInformationRrc.h
+Compiled HandoverPreparationInformationRrc-IEs.c
+Compiled HandoverPreparationInformationRrc-IEs.h
+Compiled AS-Config.c
+Compiled AS-Config.h
+Compiled AS-Context.c
+Compiled AS-Context.h
+Compiled ReestablishmentInfo.c
+Compiled ReestablishmentInfo.h
+Compiled ReestabNCellInfoList.c
+Compiled ReestabNCellInfoList.h
+Compiled ReestabNCellInfo.c
+Compiled ReestabNCellInfo.h
+Compiled RRM-Config.c
+Compiled RRM-Config.h
+Compiled CG-Config.c
+Compiled CG-Config.h
+Compiled CG-Config-IEs.c
+Compiled CG-Config-IEs.h
+Compiled MeasConfigSN.c
+Compiled MeasConfigSN.h
+Compiled NR-FreqInfo.c
+Compiled NR-FreqInfo.h
+Compiled ConfigRestrictModReqSCG.c
+Compiled ConfigRestrictModReqSCG.h
+Compiled BandCombinationIndex.c
+Compiled BandCombinationIndex.h
+Compiled BandCombinationInfoSN.c
+Compiled BandCombinationInfoSN.h
+Compiled FR-InfoList.c
+Compiled FR-InfoList.h
+Compiled FR-Info.c
+Compiled FR-Info.h
+Compiled CandidateServingFreqListNR.c
+Compiled CandidateServingFreqListNR.h
+Compiled CG-ConfigInfoRrc.c
+Compiled CG-ConfigInfoRrc.h
+Compiled CG-ConfigInfo-IEs.c
+Compiled CG-ConfigInfo-IEs.h
+Compiled ConfigRestrictInfoSCG.c
+Compiled ConfigRestrictInfoSCG.h
+Compiled BandCombinationInfoList.c
+Compiled BandCombinationInfoList.h
+Compiled BandCombinationInfo.c
+Compiled BandCombinationInfo.h
+Compiled FeatureSetEntryIndex.c
+Compiled FeatureSetEntryIndex.h
+Compiled DRX-Info.c
+Compiled DRX-Info.h
+Compiled MeasConfigMN.c
+Compiled MeasConfigMN.h
+Compiled MRDC-AssistanceInfo.c
+Compiled MRDC-AssistanceInfo.h
+Compiled AffectedCarrierFreqCombInfoMRDC.c
+Compiled AffectedCarrierFreqCombInfoMRDC.h
+Compiled VictimSystemType.c
+Compiled VictimSystemType.h
+Compiled AffectedCarrierFreqCombEUTRA.c
+Compiled AffectedCarrierFreqCombEUTRA.h
+Compiled AffectedCarrierFreqCombNR.c
+Compiled AffectedCarrierFreqCombNR.h
+Compiled MeasurementTimingConfigurationRrc.c
+Compiled MeasurementTimingConfigurationRrc.h
+Compiled MeasurementTimingConfigurationRrc-IEs.c
+Compiled MeasurementTimingConfigurationRrc-IEs.h
+Compiled MeasTimingList.c
+Compiled MeasTimingList.h
+Compiled MeasTiming.c
+Compiled MeasTiming.h
+Compiled UERadioPagingInformation.c
+Compiled UERadioPagingInformation.h
+Compiled UERadioPagingInformation-IEs.c
+Compiled UERadioPagingInformation-IEs.h
+Compiled UERadioAccessCapabilityInformation.c
+Compiled UERadioAccessCapabilityInformation.h
+Compiled UERadioAccessCapabilityInformation-IEs.c
+Compiled UERadioAccessCapabilityInformation-IEs.h
+Compiled EXTERNAL.c
+Compiled EXTERNAL.h
+Generated asn_config.h
+Copied /opt/asn1c/share/asn1c/ANY.h	-> ANY.h
+Copied /opt/asn1c/share/asn1c/ANY.c	-> ANY.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING.h	-> OCTET_STRING.h
+Copied /opt/asn1c/share/asn1c/OPEN_TYPE.h	-> OPEN_TYPE.h
+Copied /opt/asn1c/share/asn1c/OPEN_TYPE.c	-> OPEN_TYPE.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE.h	-> constr_CHOICE.h
+Copied /opt/asn1c/share/asn1c/BOOLEAN.h	-> BOOLEAN.h
+Copied /opt/asn1c/share/asn1c/BOOLEAN.c	-> BOOLEAN.c
+Copied /opt/asn1c/share/asn1c/ENUMERATED.h	-> ENUMERATED.h
+Copied /opt/asn1c/share/asn1c/ENUMERATED.c	-> ENUMERATED.c
+Copied /opt/asn1c/share/asn1c/INTEGER.h	-> INTEGER.h
+Copied /opt/asn1c/share/asn1c/NativeEnumerated.h	-> NativeEnumerated.h
+Copied /opt/asn1c/share/asn1c/GraphicString.h	-> GraphicString.h
+Copied /opt/asn1c/share/asn1c/GraphicString.c	-> GraphicString.c
+Copied /opt/asn1c/share/asn1c/INTEGER.c	-> INTEGER.c
+Copied /opt/asn1c/share/asn1c/NULL.h	-> NULL.h
+Copied /opt/asn1c/share/asn1c/NULL.c	-> NULL.c
+Copied /opt/asn1c/share/asn1c/NativeEnumerated.c	-> NativeEnumerated.c
+Copied /opt/asn1c/share/asn1c/NativeInteger.h	-> NativeInteger.h
+Copied /opt/asn1c/share/asn1c/NativeInteger.c	-> NativeInteger.c
+Copied /opt/asn1c/share/asn1c/OBJECT_IDENTIFIER.h	-> OBJECT_IDENTIFIER.h
+Copied /opt/asn1c/share/asn1c/OBJECT_IDENTIFIER.c	-> OBJECT_IDENTIFIER.c
+Copied /opt/asn1c/share/asn1c/asn_codecs_prim.h	-> asn_codecs_prim.h
+Copied /opt/asn1c/share/asn1c/ObjectDescriptor.h	-> ObjectDescriptor.h
+Copied /opt/asn1c/share/asn1c/ObjectDescriptor.c	-> ObjectDescriptor.c
+Copied /opt/asn1c/share/asn1c/asn_SEQUENCE_OF.h	-> asn_SEQUENCE_OF.h
+Copied /opt/asn1c/share/asn1c/asn_SEQUENCE_OF.c	-> asn_SEQUENCE_OF.c
+Copied /opt/asn1c/share/asn1c/asn_SET_OF.h	-> asn_SET_OF.h
+Copied /opt/asn1c/share/asn1c/asn_SET_OF.c	-> asn_SET_OF.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE.c	-> constr_CHOICE.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE.h	-> constr_SEQUENCE.h
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE.c	-> constr_SEQUENCE.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_OF.h	-> constr_SEQUENCE_OF.h
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_OF.c	-> constr_SEQUENCE_OF.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF.h	-> constr_SET_OF.h
+Copied /opt/asn1c/share/asn1c/constr_SET_OF.c	-> constr_SET_OF.c
+Copied /opt/asn1c/share/asn1c/asn_application.h	-> asn_application.h
+Copied /opt/asn1c/share/asn1c/asn_application.c	-> asn_application.c
+Copied /opt/asn1c/share/asn1c/asn_ioc.h	-> asn_ioc.h
+Copied /opt/asn1c/share/asn1c/asn_system.h	-> asn_system.h
+Copied /opt/asn1c/share/asn1c/asn_codecs.h	-> asn_codecs.h
+Copied /opt/asn1c/share/asn1c/asn_internal.h	-> asn_internal.h
+Copied /opt/asn1c/share/asn1c/asn_internal.c	-> asn_internal.c
+Copied /opt/asn1c/share/asn1c/asn_bit_data.h	-> asn_bit_data.h
+Copied /opt/asn1c/share/asn1c/asn_bit_data.c	-> asn_bit_data.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING.c	-> OCTET_STRING.c
+Copied /opt/asn1c/share/asn1c/BIT_STRING.h	-> BIT_STRING.h
+Copied /opt/asn1c/share/asn1c/BIT_STRING.c	-> BIT_STRING.c
+Copied /opt/asn1c/share/asn1c/asn_codecs_prim.c	-> asn_codecs_prim.c
+Copied /opt/asn1c/share/asn1c/ber_tlv_length.h	-> ber_tlv_length.h
+Copied /opt/asn1c/share/asn1c/ber_tlv_length.c	-> ber_tlv_length.c
+Copied /opt/asn1c/share/asn1c/ber_tlv_tag.h	-> ber_tlv_tag.h
+Copied /opt/asn1c/share/asn1c/ber_tlv_tag.c	-> ber_tlv_tag.c
+Copied /opt/asn1c/share/asn1c/constr_TYPE.h	-> constr_TYPE.h
+Copied /opt/asn1c/share/asn1c/constr_TYPE.c	-> constr_TYPE.c
+Copied /opt/asn1c/share/asn1c/constraints.h	-> constraints.h
+Copied /opt/asn1c/share/asn1c/constraints.c	-> constraints.c
+Copied /opt/asn1c/share/asn1c/xer_support.h	-> xer_support.h
+Copied /opt/asn1c/share/asn1c/xer_decoder.h	-> xer_decoder.h
+Copied /opt/asn1c/share/asn1c/xer_encoder.h	-> xer_encoder.h
+Copied /opt/asn1c/share/asn1c/xer_support.c	-> xer_support.c
+Copied /opt/asn1c/share/asn1c/xer_decoder.c	-> xer_decoder.c
+Copied /opt/asn1c/share/asn1c/xer_encoder.c	-> xer_encoder.c
+Copied /opt/asn1c/share/asn1c/ANY_xer.c	-> ANY_xer.c
+Copied /opt/asn1c/share/asn1c/BIT_STRING_xer.c	-> BIT_STRING_xer.c
+Copied /opt/asn1c/share/asn1c/BOOLEAN_xer.c	-> BOOLEAN_xer.c
+Copied /opt/asn1c/share/asn1c/INTEGER_xer.c	-> INTEGER_xer.c
+Copied /opt/asn1c/share/asn1c/NULL_xer.c	-> NULL_xer.c
+Copied /opt/asn1c/share/asn1c/NativeEnumerated_xer.c	-> NativeEnumerated_xer.c
+Copied /opt/asn1c/share/asn1c/NativeInteger_xer.c	-> NativeInteger_xer.c
+Copied /opt/asn1c/share/asn1c/OBJECT_IDENTIFIER_xer.c	-> OBJECT_IDENTIFIER_xer.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING_xer.c	-> OCTET_STRING_xer.c
+Copied /opt/asn1c/share/asn1c/OPEN_TYPE_xer.c	-> OPEN_TYPE_xer.c
+Copied /opt/asn1c/share/asn1c/asn_codecs_prim_xer.c	-> asn_codecs_prim_xer.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE_xer.c	-> constr_CHOICE_xer.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_OF_xer.c	-> constr_SEQUENCE_OF_xer.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_xer.c	-> constr_SEQUENCE_xer.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF_xer.c	-> constr_SET_OF_xer.c
+Copied /opt/asn1c/share/asn1c/per_decoder.h	-> per_decoder.h
+Copied /opt/asn1c/share/asn1c/per_encoder.h	-> per_encoder.h
+Copied /opt/asn1c/share/asn1c/per_support.h	-> per_support.h
+Copied /opt/asn1c/share/asn1c/per_opentype.h	-> per_opentype.h
+Copied /opt/asn1c/share/asn1c/per_decoder.c	-> per_decoder.c
+Copied /opt/asn1c/share/asn1c/per_encoder.c	-> per_encoder.c
+Copied /opt/asn1c/share/asn1c/per_support.c	-> per_support.c
+Copied /opt/asn1c/share/asn1c/per_opentype.c	-> per_opentype.c
+Copied /opt/asn1c/share/asn1c/uper_decoder.h	-> uper_decoder.h
+Copied /opt/asn1c/share/asn1c/uper_encoder.h	-> uper_encoder.h
+Copied /opt/asn1c/share/asn1c/uper_support.h	-> uper_support.h
+Copied /opt/asn1c/share/asn1c/uper_opentype.h	-> uper_opentype.h
+Copied /opt/asn1c/share/asn1c/uper_decoder.c	-> uper_decoder.c
+Copied /opt/asn1c/share/asn1c/uper_encoder.c	-> uper_encoder.c
+Copied /opt/asn1c/share/asn1c/uper_support.c	-> uper_support.c
+Copied /opt/asn1c/share/asn1c/uper_opentype.c	-> uper_opentype.c
+Copied /opt/asn1c/share/asn1c/ANY_uper.c	-> ANY_uper.c
+Copied /opt/asn1c/share/asn1c/BIT_STRING_uper.c	-> BIT_STRING_uper.c
+Copied /opt/asn1c/share/asn1c/BOOLEAN_uper.c	-> BOOLEAN_uper.c
+Copied /opt/asn1c/share/asn1c/ENUMERATED_uper.c	-> ENUMERATED_uper.c
+Copied /opt/asn1c/share/asn1c/INTEGER_uper.c	-> INTEGER_uper.c
+Copied /opt/asn1c/share/asn1c/NULL_uper.c	-> NULL_uper.c
+Copied /opt/asn1c/share/asn1c/NativeEnumerated_uper.c	-> NativeEnumerated_uper.c
+Copied /opt/asn1c/share/asn1c/NativeInteger_uper.c	-> NativeInteger_uper.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING_uper.c	-> OCTET_STRING_uper.c
+Copied /opt/asn1c/share/asn1c/OPEN_TYPE_uper.c	-> OPEN_TYPE_uper.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE_uper.c	-> constr_CHOICE_uper.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_OF_uper.c	-> constr_SEQUENCE_OF_uper.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_uper.c	-> constr_SEQUENCE_uper.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF_uper.c	-> constr_SET_OF_uper.c
+Copied /opt/asn1c/share/asn1c/aper_decoder.h	-> aper_decoder.h
+Copied /opt/asn1c/share/asn1c/aper_encoder.h	-> aper_encoder.h
+Copied /opt/asn1c/share/asn1c/aper_support.h	-> aper_support.h
+Copied /opt/asn1c/share/asn1c/aper_opentype.h	-> aper_opentype.h
+Copied /opt/asn1c/share/asn1c/aper_decoder.c	-> aper_decoder.c
+Copied /opt/asn1c/share/asn1c/aper_encoder.c	-> aper_encoder.c
+Copied /opt/asn1c/share/asn1c/aper_support.c	-> aper_support.c
+Copied /opt/asn1c/share/asn1c/aper_opentype.c	-> aper_opentype.c
+Copied /opt/asn1c/share/asn1c/ANY_aper.c	-> ANY_aper.c
+Copied /opt/asn1c/share/asn1c/BOOLEAN_aper.c	-> BOOLEAN_aper.c
+Copied /opt/asn1c/share/asn1c/ENUMERATED_aper.c	-> ENUMERATED_aper.c
+Copied /opt/asn1c/share/asn1c/INTEGER_aper.c	-> INTEGER_aper.c
+Copied /opt/asn1c/share/asn1c/NULL_aper.c	-> NULL_aper.c
+Copied /opt/asn1c/share/asn1c/NativeEnumerated_aper.c	-> NativeEnumerated_aper.c
+Copied /opt/asn1c/share/asn1c/NativeInteger_aper.c	-> NativeInteger_aper.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING_aper.c	-> OCTET_STRING_aper.c
+Copied /opt/asn1c/share/asn1c/OPEN_TYPE_aper.c	-> OPEN_TYPE_aper.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE_aper.c	-> constr_CHOICE_aper.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_OF_aper.c	-> constr_SEQUENCE_OF_aper.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_aper.c	-> constr_SEQUENCE_aper.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF_aper.c	-> constr_SET_OF_aper.c
+Copied /opt/asn1c/share/asn1c/BIT_STRING_print.c	-> BIT_STRING_print.c
+Copied /opt/asn1c/share/asn1c/BOOLEAN_print.c	-> BOOLEAN_print.c
+Copied /opt/asn1c/share/asn1c/INTEGER_print.c	-> INTEGER_print.c
+Copied /opt/asn1c/share/asn1c/NULL_print.c	-> NULL_print.c
+Copied /opt/asn1c/share/asn1c/NativeInteger_print.c	-> NativeInteger_print.c
+Copied /opt/asn1c/share/asn1c/OBJECT_IDENTIFIER_print.c	-> OBJECT_IDENTIFIER_print.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING_print.c	-> OCTET_STRING_print.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE_print.c	-> constr_CHOICE_print.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_print.c	-> constr_SEQUENCE_print.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF_print.c	-> constr_SET_OF_print.c
+Copied /opt/asn1c/share/asn1c/asn_random_fill.h	-> asn_random_fill.h
+Copied /opt/asn1c/share/asn1c/asn_random_fill.c	-> asn_random_fill.c
+Copied /opt/asn1c/share/asn1c/BIT_STRING_rfill.c	-> BIT_STRING_rfill.c
+Copied /opt/asn1c/share/asn1c/BOOLEAN_rfill.c	-> BOOLEAN_rfill.c
+Copied /opt/asn1c/share/asn1c/INTEGER_rfill.c	-> INTEGER_rfill.c
+Copied /opt/asn1c/share/asn1c/NULL_rfill.c	-> NULL_rfill.c
+Copied /opt/asn1c/share/asn1c/NativeInteger_rfill.c	-> NativeInteger_rfill.c
+Copied /opt/asn1c/share/asn1c/OBJECT_IDENTIFIER_rfill.c	-> OBJECT_IDENTIFIER_rfill.c
+Copied /opt/asn1c/share/asn1c/OCTET_STRING_rfill.c	-> OCTET_STRING_rfill.c
+Copied /opt/asn1c/share/asn1c/constr_CHOICE_rfill.c	-> constr_CHOICE_rfill.c
+Copied /opt/asn1c/share/asn1c/constr_SEQUENCE_rfill.c	-> constr_SEQUENCE_rfill.c
+Copied /opt/asn1c/share/asn1c/constr_SET_OF_rfill.c	-> constr_SET_OF_rfill.c
+Generated Makefile.am.libasncodec
+Generated asn_constant.h
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BCCH-BCH-Message.o -c BCCH-BCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BCCH-BCH-MessageType.o -c BCCH-BCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BCCH-DL-SCH-Message.o -c BCCH-DL-SCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BCCH-DL-SCH-MessageType.o -c BCCH-DL-SCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-CCCH-Message.o -c DL-CCCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-CCCH-MessageType.o -c DL-CCCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-DCCH-Message.o -c DL-DCCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-DCCH-MessageType.o -c DL-DCCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCCH-Message.o -c PCCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCCH-MessageType.o -c PCCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-CCCH-Message.o -c UL-CCCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-CCCH-MessageType.o -c UL-CCCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-CCCH1-Message.o -c UL-CCCH1-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-CCCH1-MessageType.o -c UL-CCCH1-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-DCCH-Message.o -c UL-DCCH-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-DCCH-MessageType.o -c UL-DCCH-MessageType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CounterCheck.o -c CounterCheck.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CounterCheck-IEs.o -c CounterCheck-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-CountMSB-InfoList.o -c DRB-CountMSB-InfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-CountMSB-Info.o -c DRB-CountMSB-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CounterCheckResponse.o -c CounterCheckResponse.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CounterCheckResponse-IEs.o -c CounterCheckResponse-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-CountInfoList.o -c DRB-CountInfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-CountInfo.o -c DRB-CountInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DLInformationTransfer.o -c DLInformationTransfer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DLInformationTransfer-IEs.o -c DLInformationTransfer-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FailureInformation.o -c FailureInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FailureInformation-IEs.o -c FailureInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FailureInfoRLC-Bearer.o -c FailureInfoRLC-Bearer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o LocationMeasurementIndication.o -c LocationMeasurementIndication.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o LocationMeasurementIndication-IEs.o -c LocationMeasurementIndication-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MIB.o -c MIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasurementReport.o -c MeasurementReport.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasurementReport-IEs.o -c MeasurementReport-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MobilityFromNRCommand.o -c MobilityFromNRCommand.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MobilityFromNRCommand-IEs.o -c MobilityFromNRCommand-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PagingRrc.o -c PagingRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PagingRecordList.o -c PagingRecordList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PagingRecord.o -c PagingRecord.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PagingUE-Identity.o -c PagingUE-Identity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishment.o -c RRCReestablishment.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishment-IEs.o -c RRCReestablishment-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishmentComplete.o -c RRCReestablishmentComplete.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishmentComplete-IEs.o -c RRCReestablishmentComplete-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishmentRequest.o -c RRCReestablishmentRequest.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReestablishmentRequest-IEs.o -c RRCReestablishmentRequest-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReestabUE-Identity.o -c ReestabUE-Identity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReestablishmentCause.o -c ReestablishmentCause.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfiguration.o -c RRCReconfiguration.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfiguration-IEs.o -c RRCReconfiguration-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfiguration-v1530-IEs.o -c RRCReconfiguration-v1530-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MasterKeyUpdate.o -c MasterKeyUpdate.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfigurationComplete.o -c RRCReconfigurationComplete.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfigurationComplete-IEs.o -c RRCReconfigurationComplete-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReconfigurationComplete-v1530-IEs.o -c RRCReconfigurationComplete-v1530-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReject.o -c RRCReject.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCReject-IEs.o -c RRCReject-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCRelease.o -c RRCRelease.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCRelease-IEs.o -c RRCRelease-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCRelease-v1540-IEs.o -c RRCRelease-v1540-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RedirectedCarrierInfo.o -c RedirectedCarrierInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RedirectedCarrierInfo-EUTRA.o -c RedirectedCarrierInfo-EUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CarrierInfoNR.o -c CarrierInfoNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SuspendConfig.o -c SuspendConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PeriodicRNAU-TimerValue.o -c PeriodicRNAU-TimerValue.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellReselectionPriorities.o -c CellReselectionPriorities.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PagingCycle.o -c PagingCycle.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqPriorityListEUTRA.o -c FreqPriorityListEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqPriorityListNR.o -c FreqPriorityListNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqPriorityEUTRA.o -c FreqPriorityEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqPriorityNR.o -c FreqPriorityNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RAN-NotificationAreaInfo.o -c RAN-NotificationAreaInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-RAN-AreaCellList.o -c PLMN-RAN-AreaCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-RAN-AreaCell.o -c PLMN-RAN-AreaCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-RAN-AreaConfigList.o -c PLMN-RAN-AreaConfigList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-RAN-AreaConfig.o -c PLMN-RAN-AreaConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RAN-AreaConfig.o -c RAN-AreaConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResume.o -c RRCResume.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResume-IEs.o -c RRCResume-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeComplete.o -c RRCResumeComplete.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeComplete-IEs.o -c RRCResumeComplete-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeRequest.o -c RRCResumeRequest.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeRequest-IEs.o -c RRCResumeRequest-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeRequest1.o -c RRCResumeRequest1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCResumeRequest1-IEs.o -c RRCResumeRequest1-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetup.o -c RRCSetup.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetup-IEs.o -c RRCSetup-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetupComplete.o -c RRCSetupComplete.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetupComplete-IEs.o -c RRCSetupComplete-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RegisteredAMF.o -c RegisteredAMF.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetupRequest.o -c RRCSetupRequest.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSetupRequest-IEs.o -c RRCSetupRequest-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InitialUE-Identity.o -c InitialUE-Identity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EstablishmentCause.o -c EstablishmentCause.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSystemInfoRequest.o -c RRCSystemInfoRequest.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRCSystemInfoRequest-r15-IEs.o -c RRCSystemInfoRequest-r15-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeCommand.o -c SecurityModeCommand.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeCommand-IEs.o -c SecurityModeCommand-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityConfigSMC.o -c SecurityConfigSMC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeComplete.o -c SecurityModeComplete.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeComplete-IEs.o -c SecurityModeComplete-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeFailure.o -c SecurityModeFailure.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityModeFailure-IEs.o -c SecurityModeFailure-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB1.o -c SIB1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-AccessCategory1-SelectionAssistanceInfo.o -c UAC-AccessCategory1-SelectionAssistanceInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SystemInformation.o -c SystemInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SystemInformation-IEs.o -c SystemInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UEAssistanceInformationRrc.o -c UEAssistanceInformationRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UEAssistanceInformation-IEs.o -c UEAssistanceInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DelayBudgetReport.o -c DelayBudgetReport.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UEAssistanceInformation-v1540-IEs.o -c UEAssistanceInformation-v1540-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OverheatingAssistance.o -c OverheatingAssistance.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReducedAggregatedBandwidth.o -c ReducedAggregatedBandwidth.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UECapabilityEnquiry.o -c UECapabilityEnquiry.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UECapabilityEnquiry-IEs.o -c UECapabilityEnquiry-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UECapabilityInformation.o -c UECapabilityInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UECapabilityInformation-IEs.o -c UECapabilityInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ULInformationTransfer.o -c ULInformationTransfer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ULInformationTransfer-IEs.o -c ULInformationTransfer-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB2.o -c SIB2.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RangeToBestCell.o -c RangeToBestCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB3.o -c SIB3.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o IntraFreqNeighCellList.o -c IntraFreqNeighCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o IntraFreqNeighCellInfo.o -c IntraFreqNeighCellInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o IntraFreqBlackCellList.o -c IntraFreqBlackCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB4.o -c SIB4.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterFreqCarrierFreqList.o -c InterFreqCarrierFreqList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterFreqCarrierFreqInfo.o -c InterFreqCarrierFreqInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterFreqNeighCellList.o -c InterFreqNeighCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterFreqNeighCellInfo.o -c InterFreqNeighCellInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterFreqBlackCellList.o -c InterFreqBlackCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB5.o -c SIB5.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CarrierFreqListEUTRA.o -c CarrierFreqListEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CarrierFreqEUTRA.o -c CarrierFreqEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-FreqBlackCellList.o -c EUTRA-FreqBlackCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-FreqNeighCellList.o -c EUTRA-FreqNeighCellList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-FreqNeighCellInfo.o -c EUTRA-FreqNeighCellInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB6.o -c SIB6.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB7.o -c SIB7.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB8.o -c SIB8.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB9.o -c SIB9.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AdditionalSpectrumEmission.o -c AdditionalSpectrumEmission.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Alpha.o -c Alpha.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AMF-Identifier.o -c AMF-Identifier.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ARFCN-ValueEUTRA.o -c ARFCN-ValueEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ARFCN-ValueNR.o -c ARFCN-ValueNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BeamFailureRecoveryConfig.o -c BeamFailureRecoveryConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PRACH-ResourceDedicatedBFR.o -c PRACH-ResourceDedicatedBFR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BFR-SSB-Resource.o -c BFR-SSB-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BFR-CSIRS-Resource.o -c BFR-CSIRS-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BSR-Config.o -c BSR-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP.o -c BWP.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-Downlink.o -c BWP-Downlink.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-DownlinkCommon.o -c BWP-DownlinkCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-DownlinkDedicated.o -c BWP-DownlinkDedicated.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-Id.o -c BWP-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-Uplink.o -c BWP-Uplink.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-UplinkCommon.o -c BWP-UplinkCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BWP-UplinkDedicated.o -c BWP-UplinkDedicated.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellAccessRelatedInfo.o -c CellAccessRelatedInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellAccessRelatedInfo-EUTRA-5GC.o -c CellAccessRelatedInfo-EUTRA-5GC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-IdentityList-EUTRA-5GC.o -c PLMN-IdentityList-EUTRA-5GC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-Identity-EUTRA-5GC.o -c PLMN-Identity-EUTRA-5GC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellIdentity-EUTRA-5GC.o -c CellIdentity-EUTRA-5GC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellAccessRelatedInfo-EUTRA-EPC.o -c CellAccessRelatedInfo-EUTRA-EPC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-IdentityList-EUTRA-EPC.o -c PLMN-IdentityList-EUTRA-EPC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellGroupConfigRrc.o -c CellGroupConfigRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SpCellConfig.o -c SpCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReconfigurationWithSync.o -c ReconfigurationWithSync.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SCellConfig.o -c SCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellGroupId.o -c CellGroupId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellIdentity.o -c CellIdentity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellReselectionPriority.o -c CellReselectionPriority.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellReselectionSubPriority.o -c CellReselectionSubPriority.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CGI-Info.o -c CGI-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CodebookConfig.o -c CodebookConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ConfiguredGrantConfig.o -c ConfiguredGrantConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CG-UCI-OnPUSCH.o -c CG-UCI-OnPUSCH.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ConnEstFailureControl.o -c ConnEstFailureControl.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ControlResourceSet.o -c ControlResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ControlResourceSetId.o -c ControlResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ControlResourceSetZero.o -c ControlResourceSetZero.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CrossCarrierSchedulingConfig.o -c CrossCarrierSchedulingConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-AperiodicTriggerStateList.o -c CSI-AperiodicTriggerStateList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-AperiodicTriggerState.o -c CSI-AperiodicTriggerState.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-AssociatedReportConfigInfo.o -c CSI-AssociatedReportConfigInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-FrequencyOccupation.o -c CSI-FrequencyOccupation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-IM-Resource.o -c CSI-IM-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-IM-ResourceId.o -c CSI-IM-ResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-IM-ResourceSet.o -c CSI-IM-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-IM-ResourceSetId.o -c CSI-IM-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-MeasConfig.o -c CSI-MeasConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ReportConfig.o -c CSI-ReportConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ReportPeriodicityAndOffset.o -c CSI-ReportPeriodicityAndOffset.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-CSI-Resource.o -c PUCCH-CSI-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PortIndexFor8Ranks.o -c PortIndexFor8Ranks.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PortIndex8.o -c PortIndex8.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PortIndex4.o -c PortIndex4.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PortIndex2.o -c PortIndex2.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ReportConfigId.o -c CSI-ReportConfigId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ResourceConfig.o -c CSI-ResourceConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ResourceConfigId.o -c CSI-ResourceConfigId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ResourcePeriodicityAndOffset.o -c CSI-ResourcePeriodicityAndOffset.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-ResourceConfigMobility.o -c CSI-RS-ResourceConfigMobility.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-CellMobility.o -c CSI-RS-CellMobility.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-Resource-Mobility.o -c CSI-RS-Resource-Mobility.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-Index.o -c CSI-RS-Index.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-ResourceMapping.o -c CSI-RS-ResourceMapping.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-SemiPersistentOnPUSCH-TriggerStateList.o -c CSI-SemiPersistentOnPUSCH-TriggerStateList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-SemiPersistentOnPUSCH-TriggerState.o -c CSI-SemiPersistentOnPUSCH-TriggerState.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-SSB-ResourceSet.o -c CSI-SSB-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-SSB-ResourceSetId.o -c CSI-SSB-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DedicatedNAS-Message.o -c DedicatedNAS-Message.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DMRS-DownlinkConfig.o -c DMRS-DownlinkConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DMRS-UplinkConfig.o -c DMRS-UplinkConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DownlinkConfigCommon.o -c DownlinkConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DownlinkConfigCommonSIB.o -c DownlinkConfigCommonSIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BCCH-Config.o -c BCCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCCH-Config.o -c PCCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DownlinkPreemption.o -c DownlinkPreemption.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INT-ConfigurationPerServingCell.o -c INT-ConfigurationPerServingCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-Identity.o -c DRB-Identity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRX-ConfigRrc.o -c DRX-ConfigRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FilterCoefficient.o -c FilterCoefficient.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandIndicatorNR.o -c FreqBandIndicatorNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FrequencyInfoDL.o -c FrequencyInfoDL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FrequencyInfoDL-SIB.o -c FrequencyInfoDL-SIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FrequencyInfoUL.o -c FrequencyInfoUL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FrequencyInfoUL-SIB.o -c FrequencyInfoUL-SIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Hysteresis.o -c Hysteresis.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o I-RNTI-Value.o -c I-RNTI-Value.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o LocationMeasurementInfo.o -c LocationMeasurementInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-RSTD-InfoList.o -c EUTRA-RSTD-InfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-RSTD-Info.o -c EUTRA-RSTD-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o LogicalChannelConfig.o -c LogicalChannelConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o LogicalChannelIdentity.o -c LogicalChannelIdentity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MAC-CellGroupConfig.o -c MAC-CellGroupConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DataInactivityTimer.o -c DataInactivityTimer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasConfigRrc.o -c MeasConfigRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectToRemoveList.o -c MeasObjectToRemoveList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasIdToRemoveList.o -c MeasIdToRemoveList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigToRemoveList.o -c ReportConfigToRemoveList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasGapConfigRrc.o -c MeasGapConfigRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o GapConfig.o -c GapConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasGapSharingConfig.o -c MeasGapSharingConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasGapSharingScheme.o -c MeasGapSharingScheme.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasId.o -c MeasId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasIdToAddModList.o -c MeasIdToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasIdToAddMod.o -c MeasIdToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectEUTRA.o -c MeasObjectEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-CellIndexList.o -c EUTRA-CellIndexList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-CellIndex.o -c EUTRA-CellIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-Cell.o -c EUTRA-Cell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-BlackCell.o -c EUTRA-BlackCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectId.o -c MeasObjectId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectNR.o -c MeasObjectNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReferenceSignalConfig.o -c ReferenceSignalConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SSB-ConfigMobility.o -c SSB-ConfigMobility.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Q-OffsetRangeList.o -c Q-OffsetRangeList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ThresholdNR.o -c ThresholdNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellsToAddModList.o -c CellsToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellsToAddMod.o -c CellsToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectToAddModList.o -c MeasObjectToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasObjectToAddMod.o -c MeasObjectToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultCellListSFTD.o -c MeasResultCellListSFTD.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultCellSFTD.o -c MeasResultCellSFTD.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResults.o -c MeasResults.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultServMOList.o -c MeasResultServMOList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultServMO.o -c MeasResultServMO.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultListNR.o -c MeasResultListNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultNR.o -c MeasResultNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultListEUTRA.o -c MeasResultListEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultEUTRA.o -c MeasResultEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MultiBandInfoListEUTRA.o -c MultiBandInfoListEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasQuantityResults.o -c MeasQuantityResults.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasQuantityResultsEUTRA.o -c MeasQuantityResultsEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ResultsPerSSB-IndexList.o -c ResultsPerSSB-IndexList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ResultsPerSSB-Index.o -c ResultsPerSSB-Index.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ResultsPerCSI-RS-IndexList.o -c ResultsPerCSI-RS-IndexList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ResultsPerCSI-RS-Index.o -c ResultsPerCSI-RS-Index.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultSCG-Failure.o -c MeasResultSCG-Failure.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResultList2NR.o -c MeasResultList2NR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasResult2NR.o -c MeasResult2NR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MobilityStateParameters.o -c MobilityStateParameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MultiFrequencyBandListNR.o -c MultiFrequencyBandListNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MultiFrequencyBandListNR-SIB.o -c MultiFrequencyBandListNR-SIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NR-MultiBandInfo.o -c NR-MultiBandInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NextHopChainingCount.o -c NextHopChainingCount.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NG-5G-S-TMSI.o -c NG-5G-S-TMSI.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NR-NS-PmaxList.o -c NR-NS-PmaxList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NR-NS-PmaxValue.o -c NR-NS-PmaxValue.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NZP-CSI-RS-Resource.o -c NZP-CSI-RS-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NZP-CSI-RS-ResourceId.o -c NZP-CSI-RS-ResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NZP-CSI-RS-ResourceSet.o -c NZP-CSI-RS-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NZP-CSI-RS-ResourceSetId.o -c NZP-CSI-RS-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o P-Max.o -c P-Max.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCI-List.o -c PCI-List.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCI-Range.o -c PCI-Range.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCI-RangeElement.o -c PCI-RangeElement.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCI-RangeIndex.o -c PCI-RangeIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PCI-RangeIndexList.o -c PCI-RangeIndexList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCCH-Config.o -c PDCCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCCH-ConfigCommon.o -c PDCCH-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCCH-ConfigSIB1.o -c PDCCH-ConfigSIB1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCCH-ServingCellConfig.o -c PDCCH-ServingCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCP-Config.o -c PDCP-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-DataSplitThreshold.o -c UL-DataSplitThreshold.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-Config.o -c PDSCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RateMatchPatternGroup.o -c RateMatchPatternGroup.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-ConfigCommon.o -c PDSCH-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-ServingCellConfig.o -c PDSCH-ServingCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-CodeBlockGroupTransmission.o -c PDSCH-CodeBlockGroupTransmission.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-TimeDomainResourceAllocationList.o -c PDSCH-TimeDomainResourceAllocationList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDSCH-TimeDomainResourceAllocation.o -c PDSCH-TimeDomainResourceAllocation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PHR-Config.o -c PHR-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PhysCellId.o -c PhysCellId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PhysicalCellGroupConfig.o -c PhysicalCellGroupConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-IdentitY.o -c PLMN-IdentitY.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MCC.o -c MCC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MNC.o -c MNC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MCC-MNC-Digit.o -c MCC-MNC-Digit.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-IdentityInfoList.o -c PLMN-IdentityInfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PLMN-IdentityInfo.o -c PLMN-IdentityInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PRB-Id.o -c PRB-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PTRS-DownlinkConfig.o -c PTRS-DownlinkConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PTRS-UplinkConfig.o -c PTRS-UplinkConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-Config.o -c PUCCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-FormatConfig.o -c PUCCH-FormatConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-MaxCodeRate.o -c PUCCH-MaxCodeRate.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-ResourceSet.o -c PUCCH-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-ResourceSetId.o -c PUCCH-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-Resource.o -c PUCCH-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-ResourceId.o -c PUCCH-ResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-format0.o -c PUCCH-format0.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-format1.o -c PUCCH-format1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-format2.o -c PUCCH-format2.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-format3.o -c PUCCH-format3.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-format4.o -c PUCCH-format4.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-ConfigCommon.o -c PUCCH-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-PathlossReferenceRS-Id.o -c PUCCH-PathlossReferenceRS-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-PowerControl.o -c PUCCH-PowerControl.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o P0-PUCCH.o -c P0-PUCCH.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o P0-PUCCH-Id.o -c P0-PUCCH-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-PathlossReferenceRS.o -c PUCCH-PathlossReferenceRS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-SpatialRelationInfo.o -c PUCCH-SpatialRelationInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-SpatialRelationInfoId.o -c PUCCH-SpatialRelationInfoId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUCCH-TPC-CommandConfig.o -c PUCCH-TPC-CommandConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-Config.o -c PUSCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UCI-OnPUSCH.o -c UCI-OnPUSCH.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-ConfigCommon.o -c PUSCH-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-PowerControl.o -c PUSCH-PowerControl.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o P0-PUSCH-AlphaSet.o -c P0-PUSCH-AlphaSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o P0-PUSCH-AlphaSetId.o -c P0-PUSCH-AlphaSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-PathlossReferenceRS.o -c PUSCH-PathlossReferenceRS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-PathlossReferenceRS-Id.o -c PUSCH-PathlossReferenceRS-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRI-PUSCH-PowerControl.o -c SRI-PUSCH-PowerControl.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRI-PUSCH-PowerControlId.o -c SRI-PUSCH-PowerControlId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BetaOffsets.o -c BetaOffsets.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-ServingCellConfig.o -c PUSCH-ServingCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-CodeBlockGroupTransmission.o -c PUSCH-CodeBlockGroupTransmission.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-TimeDomainResourceAllocationList.o -c PUSCH-TimeDomainResourceAllocationList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-TimeDomainResourceAllocation.o -c PUSCH-TimeDomainResourceAllocation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PUSCH-TPC-CommandConfig.o -c PUSCH-TPC-CommandConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Q-OffsetRange.o -c Q-OffsetRange.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Q-QualMin.o -c Q-QualMin.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Q-RxLevMin.o -c Q-RxLevMin.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o QuantityConfig.o -c QuantityConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o QuantityConfigNR.o -c QuantityConfigNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o QuantityConfigRS.o -c QuantityConfigRS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FilterConfig.o -c FilterConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RACH-ConfigCommon.o -c RACH-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RACH-ConfigDedicated.o -c RACH-ConfigDedicated.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CFRA.o -c CFRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CFRA-SSB-Resource.o -c CFRA-SSB-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CFRA-CSIRS-Resource.o -c CFRA-CSIRS-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RACH-ConfigGeneric.o -c RACH-ConfigGeneric.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RA-Prioritization.o -c RA-Prioritization.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RadioBearerConfig.o -c RadioBearerConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRB-ToAddModList.o -c SRB-ToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRB-ToAddMod.o -c SRB-ToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-ToAddModList.o -c DRB-ToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-ToAddMod.o -c DRB-ToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRB-ToReleaseList.o -c DRB-ToReleaseList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityConfig.o -c SecurityConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RadioLinkMonitoringConfig.o -c RadioLinkMonitoringConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RadioLinkMonitoringRS.o -c RadioLinkMonitoringRS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RadioLinkMonitoringRS-Id.o -c RadioLinkMonitoringRS-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RAN-AreaCode.o -c RAN-AreaCode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RateMatchPattern.o -c RateMatchPattern.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RateMatchPatternId.o -c RateMatchPatternId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RateMatchPatternLTE-CRS.o -c RateMatchPatternLTE-CRS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RejectWaitTime.o -c RejectWaitTime.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigId.o -c ReportConfigId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigInterRAT.o -c ReportConfigInterRAT.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportCGI-EUTRA.o -c ReportCGI-EUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EventTriggerConfigInterRAT.o -c EventTriggerConfigInterRAT.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PeriodicalReportConfigInterRAT.o -c PeriodicalReportConfigInterRAT.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasTriggerQuantityEUTRA.o -c MeasTriggerQuantityEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RSRP-RangeEUTRA.o -c RSRP-RangeEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RSRQ-RangeEUTRA.o -c RSRQ-RangeEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SINR-RangeEUTRA.o -c SINR-RangeEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigNR.o -c ReportConfigNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportCGI.o -c ReportCGI.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EventTriggerConfig.o -c EventTriggerConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PeriodicalReportConfig.o -c PeriodicalReportConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NR-RS-Type.o -c NR-RS-Type.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasTriggerQuantity.o -c MeasTriggerQuantity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasTriggerQuantityOffset.o -c MeasTriggerQuantityOffset.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasReportQuantity.o -c MeasReportQuantity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigToAddModList.o -c ReportConfigToAddModList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportConfigToAddMod.o -c ReportConfigToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReportInterval.o -c ReportInterval.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReselectionThreshold.o -c ReselectionThreshold.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReselectionThresholdQ.o -c ReselectionThresholdQ.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ResumeCause.o -c ResumeCause.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RLC-BearerConfig.o -c RLC-BearerConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RLC-Config.o -c RLC-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-AM-RLC.o -c UL-AM-RLC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-AM-RLC.o -c DL-AM-RLC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UL-UM-RLC.o -c UL-UM-RLC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DL-UM-RLC.o -c DL-UM-RLC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o T-PollRetransmit.o -c T-PollRetransmit.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PollPDU.o -c PollPDU.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PollByte.o -c PollByte.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o T-Reassembly.o -c T-Reassembly.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o T-StatusProhibit.o -c T-StatusProhibit.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SN-FieldLengthUM.o -c SN-FieldLengthUM.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SN-FieldLengthAM.o -c SN-FieldLengthAM.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RLF-TimersAndConstants.o -c RLF-TimersAndConstants.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RNTI-Value.o -c RNTI-Value.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RSRP-Range.o -c RSRP-Range.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RSRQ-Range.o -c RSRQ-Range.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SCellIndexRrc.o -c SCellIndexRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingRequestConfig.o -c SchedulingRequestConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingRequestToAddMod.o -c SchedulingRequestToAddMod.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingRequestId.o -c SchedulingRequestId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingRequestResourceConfig.o -c SchedulingRequestResourceConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingRequestResourceId.o -c SchedulingRequestResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ScramblingId.o -c ScramblingId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SCS-SpecificCarrier.o -c SCS-SpecificCarrier.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SDAP-Config.o -c SDAP-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o QFI.o -c QFI.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDU-SessionID.o -c PDU-SessionID.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SearchSpace.o -c SearchSpace.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SearchSpaceId.o -c SearchSpaceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SearchSpaceZero.o -c SearchSpaceZero.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SecurityAlgorithmConfig.o -c SecurityAlgorithmConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o IntegrityProtAlgorithm.o -c IntegrityProtAlgorithm.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CipheringAlgorithm.o -c CipheringAlgorithm.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ServCellIndexRrc.o -c ServCellIndexRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ServingCellConfig.o -c ServingCellConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkConfig.o -c UplinkConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ServingCellConfigCommon.o -c ServingCellConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ServingCellConfigCommonSIB.o -c ServingCellConfigCommonSIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ShortI-RNTI-Value.o -c ShortI-RNTI-Value.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ShortMAC-I.o -c ShortMAC-I.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SINR-Range.o -c SINR-Range.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SI-SchedulingInfo.o -c SI-SchedulingInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SchedulingInfo.o -c SchedulingInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB-Mapping.o -c SIB-Mapping.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SIB-TypeInfo.o -c SIB-TypeInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SI-RequestConfig.o -c SI-RequestConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SI-RequestResources.o -c SI-RequestResources.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SlotFormatCombinationsPerCell.o -c SlotFormatCombinationsPerCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SlotFormatCombination.o -c SlotFormatCombination.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SlotFormatCombinationId.o -c SlotFormatCombinationId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SlotFormatIndicator.o -c SlotFormatIndicator.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o S-NSSAI.o -c S-NSSAI.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SpeedStateScaleFactors.o -c SpeedStateScaleFactors.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SS-RSSI-Measurement.o -c SS-RSSI-Measurement.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SPS-Config.o -c SPS-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRB-Identity.o -c SRB-Identity.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-CarrierSwitching.o -c SRS-CarrierSwitching.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-TPC-PDCCH-Config.o -c SRS-TPC-PDCCH-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-CC-SetIndex.o -c SRS-CC-SetIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-Config.o -c SRS-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-ResourceSet.o -c SRS-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-ResourceSetId.o -c SRS-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-Resource.o -c SRS-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-SpatialRelationInfo.o -c SRS-SpatialRelationInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-ResourceId.o -c SRS-ResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-PeriodicityAndOffset.o -c SRS-PeriodicityAndOffset.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-TPC-CommandConfig.o -c SRS-TPC-CommandConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SSB-Index.o -c SSB-Index.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SSB-MTC.o -c SSB-MTC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SSB-MTC2.o -c SSB-MTC2.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SSB-ToMeasure.o -c SSB-ToMeasure.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SubcarrierSpacing.o -c SubcarrierSpacing.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TAG-Config.o -c TAG-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TAG.o -c TAG.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TAG-Id.o -c TAG-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TimeAlignmentTimer.o -c TimeAlignmentTimer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TCI-State.o -c TCI-State.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o QCL-Info.o -c QCL-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TCI-StateId.o -c TCI-StateId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TDD-UL-DL-ConfigCommon.o -c TDD-UL-DL-ConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TDD-UL-DL-Pattern.o -c TDD-UL-DL-Pattern.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TDD-UL-DL-ConfigDedicated.o -c TDD-UL-DL-ConfigDedicated.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TDD-UL-DL-SlotConfig.o -c TDD-UL-DL-SlotConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TDD-UL-DL-SlotIndex.o -c TDD-UL-DL-SlotIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TrackingAreaCode.o -c TrackingAreaCode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o T-Reselection.o -c T-Reselection.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TimeToTrigger.o -c TimeToTrigger.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringInfoSetIndex.o -c UAC-BarringInfoSetIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringInfoSetList.o -c UAC-BarringInfoSetList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringInfoSet.o -c UAC-BarringInfoSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringPerCatList.o -c UAC-BarringPerCatList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringPerCat.o -c UAC-BarringPerCat.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringPerPLMN-List.o -c UAC-BarringPerPLMN-List.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UAC-BarringPerPLMN.o -c UAC-BarringPerPLMN.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-TimersAndConstants.o -c UE-TimersAndConstants.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkConfigCommon.o -c UplinkConfigCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkConfigCommonSIB.o -c UplinkConfigCommonSIB.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkTxDirectCurrentList.o -c UplinkTxDirectCurrentList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkTxDirectCurrentCell.o -c UplinkTxDirectCurrentCell.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UplinkTxDirectCurrentBWP.o -c UplinkTxDirectCurrentBWP.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ZP-CSI-RS-Resource.o -c ZP-CSI-RS-Resource.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ZP-CSI-RS-ResourceId.o -c ZP-CSI-RS-ResourceId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ZP-CSI-RS-ResourceSet.o -c ZP-CSI-RS-ResourceSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ZP-CSI-RS-ResourceSetId.o -c ZP-CSI-RS-ResourceSetId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AccessStratumRelease.o -c AccessStratumRelease.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombinationList.o -c BandCombinationList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombination.o -c BandCombination.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandParameters.o -c BandParameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CA-BandwidthClassEUTRA.o -c CA-BandwidthClassEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CA-BandwidthClassNR.o -c CA-BandwidthClassNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CA-ParametersEUTRA.o -c CA-ParametersEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CA-ParametersNR.o -c CA-ParametersNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetCombination.o -c FeatureSetCombination.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetsPerBand.o -c FeatureSetsPerBand.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSet.o -c FeatureSet.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetCombinationId.o -c FeatureSetCombinationId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetDownlink.o -c FeatureSetDownlink.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-IM-ReceptionForFeedback.o -c CSI-RS-IM-ReceptionForFeedback.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TypeI-SinglePanelCodebook.o -c TypeI-SinglePanelCodebook.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TypeI-MultiPanelCodebook.o -c TypeI-MultiPanelCodebook.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TypeII-Codebook.o -c TypeII-Codebook.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o TypeII-CodebookPortSelection.o -c TypeII-CodebookPortSelection.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetDownlinkId.o -c FeatureSetDownlinkId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetDownlinkPerCC.o -c FeatureSetDownlinkPerCC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetDownlinkPerCC-Id.o -c FeatureSetDownlinkPerCC-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetEUTRA-DownlinkId.o -c FeatureSetEUTRA-DownlinkId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetEUTRA-UplinkId.o -c FeatureSetEUTRA-UplinkId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSets.o -c FeatureSets.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetUplink.o -c FeatureSetUplink.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-ReportFramework.o -c CSI-ReportFramework.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-Resources.o -c SRS-Resources.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetUplinkId.o -c FeatureSetUplinkId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetUplinkPerCC.o -c FeatureSetUplinkPerCC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetUplinkPerCC-Id.o -c FeatureSetUplinkPerCC-Id.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandIndicatorEUTRA.o -c FreqBandIndicatorEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandList.o -c FreqBandList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandInformation.o -c FreqBandInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandInformationEUTRA.o -c FreqBandInformationEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqBandInformationNR.o -c FreqBandInformationNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AggregatedBandwidth.o -c AggregatedBandwidth.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FreqSeparationClass.o -c FreqSeparationClass.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o InterRAT-Parameters.o -c InterRAT-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-Parameters.o -c EUTRA-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-ParametersCommon.o -c EUTRA-ParametersCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-ParametersXDD-Diff.o -c EUTRA-ParametersXDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MAC-Parameters.o -c MAC-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MAC-ParametersCommon.o -c MAC-ParametersCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MAC-ParametersXDD-Diff.o -c MAC-ParametersXDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParameters.o -c MeasAndMobParameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersCommon.o -c MeasAndMobParametersCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersXDD-Diff.o -c MeasAndMobParametersXDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersFRX-Diff.o -c MeasAndMobParametersFRX-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersMRDC.o -c MeasAndMobParametersMRDC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersMRDC-Common.o -c MeasAndMobParametersMRDC-Common.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersMRDC-XDD-Diff.o -c MeasAndMobParametersMRDC-XDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasAndMobParametersMRDC-FRX-Diff.o -c MeasAndMobParametersMRDC-FRX-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MIMO-LayersDL.o -c MIMO-LayersDL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MIMO-LayersUL.o -c MIMO-LayersUL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MIMO-ParametersPerBand.o -c MIMO-ParametersPerBand.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BeamManagementSSB-CSI-RS.o -c BeamManagementSSB-CSI-RS.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CSI-RS-ForTracking.o -c CSI-RS-ForTracking.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PTRS-DensityRecommendationDL.o -c PTRS-DensityRecommendationDL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PTRS-DensityRecommendationUL.o -c PTRS-DensityRecommendationUL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SRS-TxSwitch.o -c SRS-TxSwitch.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ModulationOrder.o -c ModulationOrder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MRDC-Parameters.o -c MRDC-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCP-Parameters.o -c PDCP-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o PDCP-ParametersMRDC.o -c PDCP-ParametersMRDC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-Parameters.o -c Phy-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersCommon.o -c Phy-ParametersCommon.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersXDD-Diff.o -c Phy-ParametersXDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersFRX-Diff.o -c Phy-ParametersFRX-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersFR1.o -c Phy-ParametersFR1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersFR2.o -c Phy-ParametersFR2.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o Phy-ParametersMRDC.o -c Phy-ParametersMRDC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NAICS-Capability-Entry.o -c NAICS-Capability-Entry.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RAT-Type.o -c RAT-Type.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RF-Parameters.o -c RF-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandNR.o -c BandNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RF-ParametersMRDC.o -c RF-ParametersMRDC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RLC-Parameters.o -c RLC-Parameters.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o SupportedBandwidth.o -c SupportedBandwidth.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-CapabilityRAT-ContainerListRRC.o -c UE-CapabilityRAT-ContainerListRRC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-CapabilityRAT-Container.o -c UE-CapabilityRAT-Container.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-CapabilityRAT-RequestList.o -c UE-CapabilityRAT-RequestList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-CapabilityRAT-Request.o -c UE-CapabilityRAT-Request.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-CapabilityRequestFilterNR.o -c UE-CapabilityRequestFilterNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-MRDC-Capability.o -c UE-MRDC-Capability.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-MRDC-CapabilityAddXDD-Mode.o -c UE-MRDC-CapabilityAddXDD-Mode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-MRDC-CapabilityAddFRX-Mode.o -c UE-MRDC-CapabilityAddFRX-Mode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o GeneralParametersMRDC-XDD-Diff.o -c GeneralParametersMRDC-XDD-Diff.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-NR-Capability.o -c UE-NR-Capability.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-NR-CapabilityAddXDD-Mode.o -c UE-NR-CapabilityAddXDD-Mode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UE-NR-CapabilityAddFRX-Mode.o -c UE-NR-CapabilityAddFRX-Mode.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-AllowedMeasBandwidth.o -c EUTRA-AllowedMeasBandwidth.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-MBSFN-SubframeConfigList.o -c EUTRA-MBSFN-SubframeConfigList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-MBSFN-SubframeConfig.o -c EUTRA-MBSFN-SubframeConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-MultiBandInfoList.o -c EUTRA-MultiBandInfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-MultiBandInfo.o -c EUTRA-MultiBandInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-NS-PmaxList.o -c EUTRA-NS-PmaxList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-NS-PmaxValue.o -c EUTRA-NS-PmaxValue.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-PhysCellId.o -c EUTRA-PhysCellId.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-PhysCellIdRange.o -c EUTRA-PhysCellIdRange.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-PresenceAntennaPort1.o -c EUTRA-PresenceAntennaPort1.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EUTRA-Q-OffsetRange.o -c EUTRA-Q-OffsetRange.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OtherConfig.o -c OtherConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRC-TransactionIdentifier.o -c RRC-TransactionIdentifier.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarPendingRNA-Update.o -c VarPendingRNA-Update.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarMeasConfig.o -c VarMeasConfig.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarMeasReportList.o -c VarMeasReportList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarMeasReport.o -c VarMeasReport.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CellsTriggeredList.o -c CellsTriggeredList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarResumeMAC-Input.o -c VarResumeMAC-Input.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VarShortMAC-Input.o -c VarShortMAC-Input.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o HandoverCommand.o -c HandoverCommand.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o HandoverCommand-IEs.o -c HandoverCommand-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o HandoverPreparationInformationRrc.o -c HandoverPreparationInformationRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o HandoverPreparationInformationRrc-IEs.o -c HandoverPreparationInformationRrc-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AS-Config.o -c AS-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AS-Context.o -c AS-Context.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReestablishmentInfo.o -c ReestablishmentInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReestabNCellInfoList.o -c ReestabNCellInfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ReestabNCellInfo.o -c ReestabNCellInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o RRM-Config.o -c RRM-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CG-Config.o -c CG-Config.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CG-Config-IEs.o -c CG-Config-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasConfigSN.o -c MeasConfigSN.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NR-FreqInfo.o -c NR-FreqInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ConfigRestrictModReqSCG.o -c ConfigRestrictModReqSCG.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombinationIndex.o -c BandCombinationIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombinationInfoSN.o -c BandCombinationInfoSN.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FR-InfoList.o -c FR-InfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FR-Info.o -c FR-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CandidateServingFreqListNR.o -c CandidateServingFreqListNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CG-ConfigInfoRrc.o -c CG-ConfigInfoRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o CG-ConfigInfo-IEs.o -c CG-ConfigInfo-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ConfigRestrictInfoSCG.o -c ConfigRestrictInfoSCG.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombinationInfoList.o -c BandCombinationInfoList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BandCombinationInfo.o -c BandCombinationInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o FeatureSetEntryIndex.o -c FeatureSetEntryIndex.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o DRX-Info.o -c DRX-Info.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasConfigMN.o -c MeasConfigMN.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MRDC-AssistanceInfo.o -c MRDC-AssistanceInfo.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AffectedCarrierFreqCombInfoMRDC.o -c AffectedCarrierFreqCombInfoMRDC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o VictimSystemType.o -c VictimSystemType.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AffectedCarrierFreqCombEUTRA.o -c AffectedCarrierFreqCombEUTRA.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o AffectedCarrierFreqCombNR.o -c AffectedCarrierFreqCombNR.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasurementTimingConfigurationRrc.o -c MeasurementTimingConfigurationRrc.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasurementTimingConfigurationRrc-IEs.o -c MeasurementTimingConfigurationRrc-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasTimingList.o -c MeasTimingList.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o MeasTiming.o -c MeasTiming.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UERadioPagingInformation.o -c UERadioPagingInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UERadioPagingInformation-IEs.o -c UERadioPagingInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UERadioAccessCapabilityInformation.o -c UERadioAccessCapabilityInformation.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o UERadioAccessCapabilityInformation-IEs.o -c UERadioAccessCapabilityInformation-IEs.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o EXTERNAL.o -c EXTERNAL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ANY.o -c ANY.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OPEN_TYPE.o -c OPEN_TYPE.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN.o -c BOOLEAN.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ENUMERATED.o -c ENUMERATED.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o GraphicString.o -c GraphicString.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER.o -c INTEGER.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL.o -c NULL.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeEnumerated.o -c NativeEnumerated.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger.o -c NativeInteger.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OBJECT_IDENTIFIER.o -c OBJECT_IDENTIFIER.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ObjectDescriptor.o -c ObjectDescriptor.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_SEQUENCE_OF.o -c asn_SEQUENCE_OF.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_SET_OF.o -c asn_SET_OF.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE.o -c constr_CHOICE.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE.o -c constr_SEQUENCE.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_OF.o -c constr_SEQUENCE_OF.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF.o -c constr_SET_OF.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_application.o -c asn_application.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_internal.o -c asn_internal.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_bit_data.o -c asn_bit_data.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING.o -c OCTET_STRING.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BIT_STRING.o -c BIT_STRING.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_codecs_prim.o -c asn_codecs_prim.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ber_tlv_length.o -c ber_tlv_length.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ber_tlv_tag.o -c ber_tlv_tag.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_TYPE.o -c constr_TYPE.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constraints.o -c constraints.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o xer_support.o -c xer_support.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o xer_decoder.o -c xer_decoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o xer_encoder.o -c xer_encoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ANY_xer.o -c ANY_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BIT_STRING_xer.o -c BIT_STRING_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN_xer.o -c BOOLEAN_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER_xer.o -c INTEGER_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL_xer.o -c NULL_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeEnumerated_xer.o -c NativeEnumerated_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger_xer.o -c NativeInteger_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OBJECT_IDENTIFIER_xer.o -c OBJECT_IDENTIFIER_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING_xer.o -c OCTET_STRING_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OPEN_TYPE_xer.o -c OPEN_TYPE_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_codecs_prim_xer.o -c asn_codecs_prim_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE_xer.o -c constr_CHOICE_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_OF_xer.o -c constr_SEQUENCE_OF_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_xer.o -c constr_SEQUENCE_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF_xer.o -c constr_SET_OF_xer.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o per_decoder.o -c per_decoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o per_encoder.o -c per_encoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o per_support.o -c per_support.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o per_opentype.o -c per_opentype.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o uper_decoder.o -c uper_decoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o uper_encoder.o -c uper_encoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o uper_support.o -c uper_support.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o uper_opentype.o -c uper_opentype.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ANY_uper.o -c ANY_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BIT_STRING_uper.o -c BIT_STRING_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN_uper.o -c BOOLEAN_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ENUMERATED_uper.o -c ENUMERATED_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER_uper.o -c INTEGER_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL_uper.o -c NULL_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeEnumerated_uper.o -c NativeEnumerated_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger_uper.o -c NativeInteger_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING_uper.o -c OCTET_STRING_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OPEN_TYPE_uper.o -c OPEN_TYPE_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE_uper.o -c constr_CHOICE_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_OF_uper.o -c constr_SEQUENCE_OF_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_uper.o -c constr_SEQUENCE_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF_uper.o -c constr_SET_OF_uper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o aper_decoder.o -c aper_decoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o aper_encoder.o -c aper_encoder.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o aper_support.o -c aper_support.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o aper_opentype.o -c aper_opentype.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ANY_aper.o -c ANY_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN_aper.o -c BOOLEAN_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o ENUMERATED_aper.o -c ENUMERATED_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER_aper.o -c INTEGER_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL_aper.o -c NULL_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeEnumerated_aper.o -c NativeEnumerated_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger_aper.o -c NativeInteger_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING_aper.o -c OCTET_STRING_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OPEN_TYPE_aper.o -c OPEN_TYPE_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE_aper.o -c constr_CHOICE_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_OF_aper.o -c constr_SEQUENCE_OF_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_aper.o -c constr_SEQUENCE_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF_aper.o -c constr_SET_OF_aper.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BIT_STRING_print.o -c BIT_STRING_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN_print.o -c BOOLEAN_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER_print.o -c INTEGER_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL_print.o -c NULL_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger_print.o -c NativeInteger_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OBJECT_IDENTIFIER_print.o -c OBJECT_IDENTIFIER_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING_print.o -c OCTET_STRING_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE_print.o -c constr_CHOICE_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_print.o -c constr_SEQUENCE_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF_print.o -c constr_SET_OF_print.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o asn_random_fill.o -c asn_random_fill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BIT_STRING_rfill.o -c BIT_STRING_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o BOOLEAN_rfill.o -c BOOLEAN_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o INTEGER_rfill.o -c INTEGER_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NULL_rfill.o -c NULL_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o NativeInteger_rfill.o -c NativeInteger_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OBJECT_IDENTIFIER_rfill.o -c OBJECT_IDENTIFIER_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o OCTET_STRING_rfill.o -c OCTET_STRING_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_CHOICE_rfill.o -c constr_CHOICE_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SEQUENCE_rfill.o -c constr_SEQUENCE_rfill.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o constr_SET_OF_rfill.o -c constr_SET_OF_rfill.c
+ar rcs libasncodec.a BCCH-BCH-Message.o BCCH-BCH-MessageType.o BCCH-DL-SCH-Message.o BCCH-DL-SCH-MessageType.o DL-CCCH-Message.o DL-CCCH-MessageType.o DL-DCCH-Message.o DL-DCCH-MessageType.o PCCH-Message.o PCCH-MessageType.o UL-CCCH-Message.o UL-CCCH-MessageType.o UL-CCCH1-Message.o UL-CCCH1-MessageType.o UL-DCCH-Message.o UL-DCCH-MessageType.o CounterCheck.o CounterCheck-IEs.o DRB-CountMSB-InfoList.o DRB-CountMSB-Info.o CounterCheckResponse.o CounterCheckResponse-IEs.o DRB-CountInfoList.o DRB-CountInfo.o DLInformationTransfer.o DLInformationTransfer-IEs.o FailureInformation.o FailureInformation-IEs.o FailureInfoRLC-Bearer.o LocationMeasurementIndication.o LocationMeasurementIndication-IEs.o MIB.o MeasurementReport.o MeasurementReport-IEs.o MobilityFromNRCommand.o MobilityFromNRCommand-IEs.o PagingRrc.o PagingRecordList.o PagingRecord.o PagingUE-Identity.o RRCReestablishment.o RRCReestablishment-IEs.o RRCReestablishmentComplete.o RRCReestablishmentComplete-IEs.o RRCReestablishmentRequest.o RRCReestablishmentRequest-IEs.o ReestabUE-Identity.o ReestablishmentCause.o RRCReconfiguration.o RRCReconfiguration-IEs.o RRCReconfiguration-v1530-IEs.o MasterKeyUpdate.o RRCReconfigurationComplete.o RRCReconfigurationComplete-IEs.o RRCReconfigurationComplete-v1530-IEs.o RRCReject.o RRCReject-IEs.o RRCRelease.o RRCRelease-IEs.o RRCRelease-v1540-IEs.o RedirectedCarrierInfo.o RedirectedCarrierInfo-EUTRA.o CarrierInfoNR.o SuspendConfig.o PeriodicRNAU-TimerValue.o CellReselectionPriorities.o PagingCycle.o FreqPriorityListEUTRA.o FreqPriorityListNR.o FreqPriorityEUTRA.o FreqPriorityNR.o RAN-NotificationAreaInfo.o PLMN-RAN-AreaCellList.o PLMN-RAN-AreaCell.o PLMN-RAN-AreaConfigList.o PLMN-RAN-AreaConfig.o RAN-AreaConfig.o RRCResume.o RRCResume-IEs.o RRCResumeComplete.o RRCResumeComplete-IEs.o RRCResumeRequest.o RRCResumeRequest-IEs.o RRCResumeRequest1.o RRCResumeRequest1-IEs.o RRCSetup.o RRCSetup-IEs.o RRCSetupComplete.o RRCSetupComplete-IEs.o RegisteredAMF.o RRCSetupRequest.o RRCSetupRequest-IEs.o InitialUE-Identity.o EstablishmentCause.o RRCSystemInfoRequest.o RRCSystemInfoRequest-r15-IEs.o SecurityModeCommand.o SecurityModeCommand-IEs.o SecurityConfigSMC.o SecurityModeComplete.o SecurityModeComplete-IEs.o SecurityModeFailure.o SecurityModeFailure-IEs.o SIB1.o UAC-AccessCategory1-SelectionAssistanceInfo.o SystemInformation.o SystemInformation-IEs.o UEAssistanceInformationRrc.o UEAssistanceInformation-IEs.o DelayBudgetReport.o UEAssistanceInformation-v1540-IEs.o OverheatingAssistance.o ReducedAggregatedBandwidth.o UECapabilityEnquiry.o UECapabilityEnquiry-IEs.o UECapabilityInformation.o UECapabilityInformation-IEs.o ULInformationTransfer.o ULInformationTransfer-IEs.o SIB2.o RangeToBestCell.o SIB3.o IntraFreqNeighCellList.o IntraFreqNeighCellInfo.o IntraFreqBlackCellList.o SIB4.o InterFreqCarrierFreqList.o InterFreqCarrierFreqInfo.o InterFreqNeighCellList.o InterFreqNeighCellInfo.o InterFreqBlackCellList.o SIB5.o CarrierFreqListEUTRA.o CarrierFreqEUTRA.o EUTRA-FreqBlackCellList.o EUTRA-FreqNeighCellList.o EUTRA-FreqNeighCellInfo.o SIB6.o SIB7.o SIB8.o SIB9.o AdditionalSpectrumEmission.o Alpha.o AMF-Identifier.o ARFCN-ValueEUTRA.o ARFCN-ValueNR.o BeamFailureRecoveryConfig.o PRACH-ResourceDedicatedBFR.o BFR-SSB-Resource.o BFR-CSIRS-Resource.o BSR-Config.o BWP.o BWP-Downlink.o BWP-DownlinkCommon.o BWP-DownlinkDedicated.o BWP-Id.o BWP-Uplink.o BWP-UplinkCommon.o BWP-UplinkDedicated.o CellAccessRelatedInfo.o CellAccessRelatedInfo-EUTRA-5GC.o PLMN-IdentityList-EUTRA-5GC.o PLMN-Identity-EUTRA-5GC.o CellIdentity-EUTRA-5GC.o CellAccessRelatedInfo-EUTRA-EPC.o PLMN-IdentityList-EUTRA-EPC.o CellGroupConfigRrc.o SpCellConfig.o ReconfigurationWithSync.o SCellConfig.o CellGroupId.o CellIdentity.o CellReselectionPriority.o CellReselectionSubPriority.o CGI-Info.o CodebookConfig.o ConfiguredGrantConfig.o CG-UCI-OnPUSCH.o ConnEstFailureControl.o ControlResourceSet.o ControlResourceSetId.o ControlResourceSetZero.o CrossCarrierSchedulingConfig.o CSI-AperiodicTriggerStateList.o CSI-AperiodicTriggerState.o CSI-AssociatedReportConfigInfo.o CSI-FrequencyOccupation.o CSI-IM-Resource.o CSI-IM-ResourceId.o CSI-IM-ResourceSet.o CSI-IM-ResourceSetId.o CSI-MeasConfig.o CSI-ReportConfig.o CSI-ReportPeriodicityAndOffset.o PUCCH-CSI-Resource.o PortIndexFor8Ranks.o PortIndex8.o PortIndex4.o PortIndex2.o CSI-ReportConfigId.o CSI-ResourceConfig.o CSI-ResourceConfigId.o CSI-ResourcePeriodicityAndOffset.o CSI-RS-ResourceConfigMobility.o CSI-RS-CellMobility.o CSI-RS-Resource-Mobility.o CSI-RS-Index.o CSI-RS-ResourceMapping.o CSI-SemiPersistentOnPUSCH-TriggerStateList.o CSI-SemiPersistentOnPUSCH-TriggerState.o CSI-SSB-ResourceSet.o CSI-SSB-ResourceSetId.o DedicatedNAS-Message.o DMRS-DownlinkConfig.o DMRS-UplinkConfig.o DownlinkConfigCommon.o DownlinkConfigCommonSIB.o BCCH-Config.o PCCH-Config.o DownlinkPreemption.o INT-ConfigurationPerServingCell.o DRB-Identity.o DRX-ConfigRrc.o FilterCoefficient.o FreqBandIndicatorNR.o FrequencyInfoDL.o FrequencyInfoDL-SIB.o FrequencyInfoUL.o FrequencyInfoUL-SIB.o Hysteresis.o I-RNTI-Value.o LocationMeasurementInfo.o EUTRA-RSTD-InfoList.o EUTRA-RSTD-Info.o LogicalChannelConfig.o LogicalChannelIdentity.o MAC-CellGroupConfig.o DataInactivityTimer.o MeasConfigRrc.o MeasObjectToRemoveList.o MeasIdToRemoveList.o ReportConfigToRemoveList.o MeasGapConfigRrc.o GapConfig.o MeasGapSharingConfig.o MeasGapSharingScheme.o MeasId.o MeasIdToAddModList.o MeasIdToAddMod.o MeasObjectEUTRA.o EUTRA-CellIndexList.o EUTRA-CellIndex.o EUTRA-Cell.o EUTRA-BlackCell.o MeasObjectId.o MeasObjectNR.o ReferenceSignalConfig.o SSB-ConfigMobility.o Q-OffsetRangeList.o ThresholdNR.o CellsToAddModList.o CellsToAddMod.o MeasObjectToAddModList.o MeasObjectToAddMod.o MeasResultCellListSFTD.o MeasResultCellSFTD.o MeasResults.o MeasResultServMOList.o MeasResultServMO.o MeasResultListNR.o MeasResultNR.o MeasResultListEUTRA.o MeasResultEUTRA.o MultiBandInfoListEUTRA.o MeasQuantityResults.o MeasQuantityResultsEUTRA.o ResultsPerSSB-IndexList.o ResultsPerSSB-Index.o ResultsPerCSI-RS-IndexList.o ResultsPerCSI-RS-Index.o MeasResultSCG-Failure.o MeasResultList2NR.o MeasResult2NR.o MobilityStateParameters.o MultiFrequencyBandListNR.o MultiFrequencyBandListNR-SIB.o NR-MultiBandInfo.o NextHopChainingCount.o NG-5G-S-TMSI.o NR-NS-PmaxList.o NR-NS-PmaxValue.o NZP-CSI-RS-Resource.o NZP-CSI-RS-ResourceId.o NZP-CSI-RS-ResourceSet.o NZP-CSI-RS-ResourceSetId.o P-Max.o PCI-List.o PCI-Range.o PCI-RangeElement.o PCI-RangeIndex.o PCI-RangeIndexList.o PDCCH-Config.o PDCCH-ConfigCommon.o PDCCH-ConfigSIB1.o PDCCH-ServingCellConfig.o PDCP-Config.o UL-DataSplitThreshold.o PDSCH-Config.o RateMatchPatternGroup.o PDSCH-ConfigCommon.o PDSCH-ServingCellConfig.o PDSCH-CodeBlockGroupTransmission.o PDSCH-TimeDomainResourceAllocationList.o PDSCH-TimeDomainResourceAllocation.o PHR-Config.o PhysCellId.o PhysicalCellGroupConfig.o PLMN-IdentitY.o MCC.o MNC.o MCC-MNC-Digit.o PLMN-IdentityInfoList.o PLMN-IdentityInfo.o PRB-Id.o PTRS-DownlinkConfig.o PTRS-UplinkConfig.o PUCCH-Config.o PUCCH-FormatConfig.o PUCCH-MaxCodeRate.o PUCCH-ResourceSet.o PUCCH-ResourceSetId.o PUCCH-Resource.o PUCCH-ResourceId.o PUCCH-format0.o PUCCH-format1.o PUCCH-format2.o PUCCH-format3.o PUCCH-format4.o PUCCH-ConfigCommon.o PUCCH-PathlossReferenceRS-Id.o PUCCH-PowerControl.o P0-PUCCH.o P0-PUCCH-Id.o PUCCH-PathlossReferenceRS.o PUCCH-SpatialRelationInfo.o PUCCH-SpatialRelationInfoId.o PUCCH-TPC-CommandConfig.o PUSCH-Config.o UCI-OnPUSCH.o PUSCH-ConfigCommon.o PUSCH-PowerControl.o P0-PUSCH-AlphaSet.o P0-PUSCH-AlphaSetId.o PUSCH-PathlossReferenceRS.o PUSCH-PathlossReferenceRS-Id.o SRI-PUSCH-PowerControl.o SRI-PUSCH-PowerControlId.o BetaOffsets.o PUSCH-ServingCellConfig.o PUSCH-CodeBlockGroupTransmission.o PUSCH-TimeDomainResourceAllocationList.o PUSCH-TimeDomainResourceAllocation.o PUSCH-TPC-CommandConfig.o Q-OffsetRange.o Q-QualMin.o Q-RxLevMin.o QuantityConfig.o QuantityConfigNR.o QuantityConfigRS.o FilterConfig.o RACH-ConfigCommon.o RACH-ConfigDedicated.o CFRA.o CFRA-SSB-Resource.o CFRA-CSIRS-Resource.o RACH-ConfigGeneric.o RA-Prioritization.o RadioBearerConfig.o SRB-ToAddModList.o SRB-ToAddMod.o DRB-ToAddModList.o DRB-ToAddMod.o DRB-ToReleaseList.o SecurityConfig.o RadioLinkMonitoringConfig.o RadioLinkMonitoringRS.o RadioLinkMonitoringRS-Id.o RAN-AreaCode.o RateMatchPattern.o RateMatchPatternId.o RateMatchPatternLTE-CRS.o RejectWaitTime.o ReportConfigId.o ReportConfigInterRAT.o ReportCGI-EUTRA.o EventTriggerConfigInterRAT.o PeriodicalReportConfigInterRAT.o MeasTriggerQuantityEUTRA.o RSRP-RangeEUTRA.o RSRQ-RangeEUTRA.o SINR-RangeEUTRA.o ReportConfigNR.o ReportCGI.o EventTriggerConfig.o PeriodicalReportConfig.o NR-RS-Type.o MeasTriggerQuantity.o MeasTriggerQuantityOffset.o MeasReportQuantity.o ReportConfigToAddModList.o ReportConfigToAddMod.o ReportInterval.o ReselectionThreshold.o ReselectionThresholdQ.o ResumeCause.o RLC-BearerConfig.o RLC-Config.o UL-AM-RLC.o DL-AM-RLC.o UL-UM-RLC.o DL-UM-RLC.o T-PollRetransmit.o PollPDU.o PollByte.o T-Reassembly.o T-StatusProhibit.o SN-FieldLengthUM.o SN-FieldLengthAM.o RLF-TimersAndConstants.o RNTI-Value.o RSRP-Range.o RSRQ-Range.o SCellIndexRrc.o SchedulingRequestConfig.o SchedulingRequestToAddMod.o SchedulingRequestId.o SchedulingRequestResourceConfig.o SchedulingRequestResourceId.o ScramblingId.o SCS-SpecificCarrier.o SDAP-Config.o QFI.o PDU-SessionID.o SearchSpace.o SearchSpaceId.o SearchSpaceZero.o SecurityAlgorithmConfig.o IntegrityProtAlgorithm.o CipheringAlgorithm.o ServCellIndexRrc.o ServingCellConfig.o UplinkConfig.o ServingCellConfigCommon.o ServingCellConfigCommonSIB.o ShortI-RNTI-Value.o ShortMAC-I.o SINR-Range.o SI-SchedulingInfo.o SchedulingInfo.o SIB-Mapping.o SIB-TypeInfo.o SI-RequestConfig.o SI-RequestResources.o SlotFormatCombinationsPerCell.o SlotFormatCombination.o SlotFormatCombinationId.o SlotFormatIndicator.o S-NSSAI.o SpeedStateScaleFactors.o SS-RSSI-Measurement.o SPS-Config.o SRB-Identity.o SRS-CarrierSwitching.o SRS-TPC-PDCCH-Config.o SRS-CC-SetIndex.o SRS-Config.o SRS-ResourceSet.o SRS-ResourceSetId.o SRS-Resource.o SRS-SpatialRelationInfo.o SRS-ResourceId.o SRS-PeriodicityAndOffset.o SRS-TPC-CommandConfig.o SSB-Index.o SSB-MTC.o SSB-MTC2.o SSB-ToMeasure.o SubcarrierSpacing.o TAG-Config.o TAG.o TAG-Id.o TimeAlignmentTimer.o TCI-State.o QCL-Info.o TCI-StateId.o TDD-UL-DL-ConfigCommon.o TDD-UL-DL-Pattern.o TDD-UL-DL-ConfigDedicated.o TDD-UL-DL-SlotConfig.o TDD-UL-DL-SlotIndex.o TrackingAreaCode.o T-Reselection.o TimeToTrigger.o UAC-BarringInfoSetIndex.o UAC-BarringInfoSetList.o UAC-BarringInfoSet.o UAC-BarringPerCatList.o UAC-BarringPerCat.o UAC-BarringPerPLMN-List.o UAC-BarringPerPLMN.o UE-TimersAndConstants.o UplinkConfigCommon.o UplinkConfigCommonSIB.o UplinkTxDirectCurrentList.o UplinkTxDirectCurrentCell.o UplinkTxDirectCurrentBWP.o ZP-CSI-RS-Resource.o ZP-CSI-RS-ResourceId.o ZP-CSI-RS-ResourceSet.o ZP-CSI-RS-ResourceSetId.o AccessStratumRelease.o BandCombinationList.o BandCombination.o BandParameters.o CA-BandwidthClassEUTRA.o CA-BandwidthClassNR.o CA-ParametersEUTRA.o CA-ParametersNR.o FeatureSetCombination.o FeatureSetsPerBand.o FeatureSet.o FeatureSetCombinationId.o FeatureSetDownlink.o CSI-RS-IM-ReceptionForFeedback.o TypeI-SinglePanelCodebook.o TypeI-MultiPanelCodebook.o TypeII-Codebook.o TypeII-CodebookPortSelection.o FeatureSetDownlinkId.o FeatureSetDownlinkPerCC.o FeatureSetDownlinkPerCC-Id.o FeatureSetEUTRA-DownlinkId.o FeatureSetEUTRA-UplinkId.o FeatureSets.o FeatureSetUplink.o CSI-ReportFramework.o SRS-Resources.o FeatureSetUplinkId.o FeatureSetUplinkPerCC.o FeatureSetUplinkPerCC-Id.o FreqBandIndicatorEUTRA.o FreqBandList.o FreqBandInformation.o FreqBandInformationEUTRA.o FreqBandInformationNR.o AggregatedBandwidth.o FreqSeparationClass.o InterRAT-Parameters.o EUTRA-Parameters.o EUTRA-ParametersCommon.o EUTRA-ParametersXDD-Diff.o MAC-Parameters.o MAC-ParametersCommon.o MAC-ParametersXDD-Diff.o MeasAndMobParameters.o MeasAndMobParametersCommon.o MeasAndMobParametersXDD-Diff.o MeasAndMobParametersFRX-Diff.o MeasAndMobParametersMRDC.o MeasAndMobParametersMRDC-Common.o MeasAndMobParametersMRDC-XDD-Diff.o MeasAndMobParametersMRDC-FRX-Diff.o MIMO-LayersDL.o MIMO-LayersUL.o MIMO-ParametersPerBand.o BeamManagementSSB-CSI-RS.o CSI-RS-ForTracking.o PTRS-DensityRecommendationDL.o PTRS-DensityRecommendationUL.o SRS-TxSwitch.o ModulationOrder.o MRDC-Parameters.o PDCP-Parameters.o PDCP-ParametersMRDC.o Phy-Parameters.o Phy-ParametersCommon.o Phy-ParametersXDD-Diff.o Phy-ParametersFRX-Diff.o Phy-ParametersFR1.o Phy-ParametersFR2.o Phy-ParametersMRDC.o NAICS-Capability-Entry.o RAT-Type.o RF-Parameters.o BandNR.o RF-ParametersMRDC.o RLC-Parameters.o SupportedBandwidth.o UE-CapabilityRAT-ContainerListRRC.o UE-CapabilityRAT-Container.o UE-CapabilityRAT-RequestList.o UE-CapabilityRAT-Request.o UE-CapabilityRequestFilterNR.o UE-MRDC-Capability.o UE-MRDC-CapabilityAddXDD-Mode.o UE-MRDC-CapabilityAddFRX-Mode.o GeneralParametersMRDC-XDD-Diff.o UE-NR-Capability.o UE-NR-CapabilityAddXDD-Mode.o UE-NR-CapabilityAddFRX-Mode.o EUTRA-AllowedMeasBandwidth.o EUTRA-MBSFN-SubframeConfigList.o EUTRA-MBSFN-SubframeConfig.o EUTRA-MultiBandInfoList.o EUTRA-MultiBandInfo.o EUTRA-NS-PmaxList.o EUTRA-NS-PmaxValue.o EUTRA-PhysCellId.o EUTRA-PhysCellIdRange.o EUTRA-PresenceAntennaPort1.o EUTRA-Q-OffsetRange.o OtherConfig.o RRC-TransactionIdentifier.o VarPendingRNA-Update.o VarMeasConfig.o VarMeasReportList.o VarMeasReport.o CellsTriggeredList.o VarResumeMAC-Input.o VarShortMAC-Input.o HandoverCommand.o HandoverCommand-IEs.o HandoverPreparationInformationRrc.o HandoverPreparationInformationRrc-IEs.o AS-Config.o AS-Context.o ReestablishmentInfo.o ReestabNCellInfoList.o ReestabNCellInfo.o RRM-Config.o CG-Config.o CG-Config-IEs.o MeasConfigSN.o NR-FreqInfo.o ConfigRestrictModReqSCG.o BandCombinationIndex.o BandCombinationInfoSN.o FR-InfoList.o FR-Info.o CandidateServingFreqListNR.o CG-ConfigInfoRrc.o CG-ConfigInfo-IEs.o ConfigRestrictInfoSCG.o BandCombinationInfoList.o BandCombinationInfo.o FeatureSetEntryIndex.o DRX-Info.o MeasConfigMN.o MRDC-AssistanceInfo.o AffectedCarrierFreqCombInfoMRDC.o VictimSystemType.o AffectedCarrierFreqCombEUTRA.o AffectedCarrierFreqCombNR.o MeasurementTimingConfigurationRrc.o MeasurementTimingConfigurationRrc-IEs.o MeasTimingList.o MeasTiming.o UERadioPagingInformation.o UERadioPagingInformation-IEs.o UERadioAccessCapabilityInformation.o UERadioAccessCapabilityInformation-IEs.o EXTERNAL.o ANY.o OPEN_TYPE.o BOOLEAN.o ENUMERATED.o GraphicString.o INTEGER.o NULL.o NativeEnumerated.o NativeInteger.o OBJECT_IDENTIFIER.o ObjectDescriptor.o asn_SEQUENCE_OF.o asn_SET_OF.o constr_CHOICE.o constr_SEQUENCE.o constr_SEQUENCE_OF.o constr_SET_OF.o asn_application.o asn_internal.o asn_bit_data.o OCTET_STRING.o BIT_STRING.o asn_codecs_prim.o ber_tlv_length.o ber_tlv_tag.o constr_TYPE.o constraints.o xer_support.o xer_decoder.o xer_encoder.o ANY_xer.o BIT_STRING_xer.o BOOLEAN_xer.o INTEGER_xer.o NULL_xer.o NativeEnumerated_xer.o NativeInteger_xer.o OBJECT_IDENTIFIER_xer.o OCTET_STRING_xer.o OPEN_TYPE_xer.o asn_codecs_prim_xer.o constr_CHOICE_xer.o constr_SEQUENCE_OF_xer.o constr_SEQUENCE_xer.o constr_SET_OF_xer.o per_decoder.o per_encoder.o per_support.o per_opentype.o uper_decoder.o uper_encoder.o uper_support.o uper_opentype.o ANY_uper.o BIT_STRING_uper.o BOOLEAN_uper.o ENUMERATED_uper.o INTEGER_uper.o NULL_uper.o NativeEnumerated_uper.o NativeInteger_uper.o OCTET_STRING_uper.o OPEN_TYPE_uper.o constr_CHOICE_uper.o constr_SEQUENCE_OF_uper.o constr_SEQUENCE_uper.o constr_SET_OF_uper.o aper_decoder.o aper_encoder.o aper_support.o aper_opentype.o ANY_aper.o BOOLEAN_aper.o ENUMERATED_aper.o INTEGER_aper.o NULL_aper.o NativeEnumerated_aper.o NativeInteger_aper.o OCTET_STRING_aper.o OPEN_TYPE_aper.o constr_CHOICE_aper.o constr_SEQUENCE_OF_aper.o constr_SEQUENCE_aper.o constr_SET_OF_aper.o BIT_STRING_print.o BOOLEAN_print.o INTEGER_print.o NULL_print.o NativeInteger_print.o OBJECT_IDENTIFIER_print.o OCTET_STRING_print.o constr_CHOICE_print.o constr_SEQUENCE_print.o constr_SET_OF_print.o asn_random_fill.o BIT_STRING_rfill.o BOOLEAN_rfill.o INTEGER_rfill.o NULL_rfill.o NativeInteger_rfill.o OBJECT_IDENTIFIER_rfill.o OCTET_STRING_rfill.o constr_CHOICE_rfill.o constr_SEQUENCE_rfill.o constr_SET_OF_rfill.o
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I. -o test_RRC.o -c test_RRC.c
+cc -DASN_DISABLE_BER_SUPPORT -DASN_DISABLE_OER_SUPPORT  -DASN_PDU_COLLECTION -I.  -o test_RRC test_RRC.o  libasncodec.a -lm
+Making diff
+Binary files NokiaAPER/BWP_DownlinkCommon-2.aper and APER/BWP_DownlinkCommon-2.aper differ
+Binary files NokiaAPER/DownlinkConfigCommon-2.aper and APER/DownlinkConfigCommon-2.aper differ
+Binary files NokiaAPER/PDCCH_ConfigCommon-3.aper and APER/PDCCH_ConfigCommon-3.aper differ
