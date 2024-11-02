@@ -1,0 +1,29 @@
+From 7bac52a8a1879cbe10f58223899610c0b68710b2 Mon Sep 17 00:00:00 2001
+From: dong881 <joe888joejoe@gmail.com>
+Date: Sat, 2 Nov 2024 13:02:19 +0800
+Subject: [PATCH] I made some modifications (change to Mouse asn1c)
+
+---
+ RRC/makeTest.sh | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/RRC/makeTest.sh b/RRC/makeTest.sh
+index 817e26a..7d5f174 100755
+--- a/RRC/makeTest.sh
++++ b/RRC/makeTest.sh
+@@ -4,7 +4,11 @@ cp Src/test_RRC.c .
+ cp Src/testRRC.mk .
+ cp Src/rrc_15_3.asn1 .
+ 
+-asn1c -fcompound-names -fno-include-deps -findirect-choice -gen-PER -no-gen-OER rrc_15_3.asn1
++echo "Nokia asn1c"
++asn1c -h
++echo "Mouse asn1c"
++/opt/asn1c/bin/asn1c -h
++/opt/asn1c/bin/asn1c -fcompound-names -gen-UPER -no-gen-BER -no-gen-JER -no-gen-OER -gen-APER -no-gen-example -findirect-choice rrc_15_3.asn1
+ 
+ make -f testRRC.mk
+ 
+-- 
+2.34.1
+
