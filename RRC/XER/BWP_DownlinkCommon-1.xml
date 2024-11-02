@@ -1,0 +1,6 @@
+<BWP-DownlinkCommon>
+  <genericParameters>
+    <locationAndBandwidth>0</locationAndBandwidth>
+    <subcarrierSpacing><kHz15/></subcarrierSpacing>
+  </genericParameters>
+</BWP-DownlinkCommon>

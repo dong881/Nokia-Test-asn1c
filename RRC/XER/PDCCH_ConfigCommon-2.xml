@@ -1,0 +1,5 @@
+<PDCCH-ConfigCommon>
+  <searchSpaceSIB1>0</searchSpaceSIB1>
+  <pagingSearchSpace>2</pagingSearchSpace>
+  <ra-SearchSpace>3</ra-SearchSpace>
+</PDCCH-ConfigCommon>
