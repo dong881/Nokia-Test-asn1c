@@ -4,7 +4,11 @@ cp Src/test_RRC.c .
 cp Src/testRRC.mk .
 cp Src/rrc_15_3.asn1 .
 
-asn1c -fcompound-names -fno-include-deps -findirect-choice -gen-PER -no-gen-OER rrc_15_3.asn1
+echo "Nokia asn1c"
+asn1c -h
+echo "Mouse asn1c"
+/opt/asn1c/bin/asn1c -h
+/opt/asn1c/bin/asn1c -fcompound-names -fno-include-deps -findirect-choice -gen-PER -no-gen-OER rrc_15_3.asn1
 
 cp Src/SearchSpace.c.new SearchSpace.c
 
