@@ -1137,7 +1137,7 @@ static asn_SEQUENCE_specifics_t asn_SPC_dci_Format0_0_AndFormat1_0_specs_70 = {
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
-	0,	/* First extension addition */
+	-1,	/* First extension addition */
 };
 static /* Use -fall-defs-global to expose */
 asn_TYPE_descriptor_t asn_DEF_dci_Format0_0_AndFormat1_0_70 = {
@@ -1478,7 +1478,7 @@ static asn_SEQUENCE_specifics_t asn_SPC_dci_Format2_1_specs_90 = {
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
-	0,	/* First extension addition */
+	-1,	/* First extension addition */
 };
 static /* Use -fall-defs-global to expose */
 asn_TYPE_descriptor_t asn_DEF_dci_Format2_1_90 = {
@@ -1506,7 +1506,7 @@ static asn_SEQUENCE_specifics_t asn_SPC_dci_Format2_2_specs_92 = {
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
-	0,	/* First extension addition */
+	-1,	/* First extension addition */
 };
 static /* Use -fall-defs-global to expose */
 asn_TYPE_descriptor_t asn_DEF_dci_Format2_2_92 = {
