@@ -1,4 +1,3 @@
-/*
  * Don't look into this file. First, because it's a mess, and second, because
  * it's a brain of the compiler, and you don't wanna mess with brains do you? ;)
  */

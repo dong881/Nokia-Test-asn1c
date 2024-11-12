@@ -1,0 +1,25 @@
+diff --git a/libasn1compiler/asn1c_C.c b/libasn1compiler/asn1c_C.c
+index fad5fbd3..69925c26 100644
+--- a/libasn1compiler/asn1c_C.c
++++ b/libasn1compiler/asn1c_C.c
+@@ -439,6 +439,7 @@ asn1c_lang_C_type_SEQUENCE_def(arg_t *arg, asn1c_ioc_table_and_objset_t *opt_ioc
+ 	/*
+ 	 * Fetch every inner tag from the tag to elements map.
+ 	 */
++
+ 	if(_fill_tag2el_map(arg, &tag2el, &tag2el_count, -1, FTE_ALLTAGS)) {
+ 		if(tag2el) free(tag2el);
+ 		return -1;
+@@ -526,6 +527,12 @@ asn1c_lang_C_type_SEQUENCE_def(arg_t *arg, asn1c_ioc_table_and_objset_t *opt_ioc
+ 			aoms_count = 0;
+ 		}
+ 	} else {
++	        TQ_FOR(v, &(expr->members), next) {
++	           if(v->expr_type == A1TC_EXTENSIBLE) {
++		        first_extension = 0;
++ 	                break;
++	            }
++                }
+ 		elements = 0;
+ 		roms_count = 0;
+ 		aoms_count = 0;
